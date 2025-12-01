@@ -69,10 +69,16 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
     # Prepare data structure
     events = []
     subjects = set()
+    terms = set()
     
     for _, row in df.iterrows():
         days_str = row['Days']
         time_str = row['Time']
+        
+        # Get term information (with fallback for old CSV format)
+        term = str(row.get('Term', 'Unknown Term'))
+        term_code = str(row.get('Term Code', ''))
+        terms.add(term)
         
         # Handle multiple meeting times (separated by semicolons)
         if pd.notna(days_str) and pd.notna(time_str):
@@ -101,6 +107,8 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                             'start': start_time,
                             'end': end_time,
                             'subject': subject,
+                            'term': term,
+                            'termCode': term_code,
                             'color': get_subject_color(subject),
                             'crn': str(row['CRN'])
                         }
@@ -414,6 +422,13 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
             </div>
             
             <div class="filter-group">
+                <label for="termFilter">📅 Term:</label>
+                <select id="termFilter">
+                    <option value="">All Terms</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
                 <label for="subjectFilter">📚 Subject:</label>
                 <select id="subjectFilter">
                     <option value="">All Subjects</option>
@@ -528,7 +543,9 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
         function renderLegend() {{
             const legend = document.getElementById('legend');
             const subjectFilter = document.getElementById('subjectFilter');
+            const termFilter = document.getElementById('termFilter');
             const subjects = [...new Set(events.map(e => e.subject))].sort();
+            const terms = [...new Set(events.map(e => e.term))].sort();
             
             subjects.forEach(subject => {{
                 const item = document.createElement('div');
@@ -549,6 +566,14 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                 option.textContent = subject;
                 subjectFilter.appendChild(option);
             }});
+            
+            // Populate term filter
+            terms.forEach(term => {{
+                const option = document.createElement('option');
+                option.value = term;
+                option.textContent = term;
+                termFilter.appendChild(option);
+            }});
         }}
         
         function showEventDetails(event) {{
@@ -558,6 +583,10 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
             
             modalTitle.textContent = event.title;
             modalBody.innerHTML = `
+                <div class="modal-row">
+                    <div class="modal-label">Term:</div>
+                    <div class="modal-value">${{event.term}}</div>
+                </div>
                 <div class="modal-row">
                     <div class="modal-label">Course:</div>
                     <div class="modal-value">${{event.courseName}}</div>
@@ -593,6 +622,7 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
         
         function applyFilters() {{
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const termFilter = document.getElementById('termFilter').value;
             const subjectFilter = document.getElementById('subjectFilter').value;
             const timeFilter = document.getElementById('timeFilter').value;
             
@@ -606,6 +636,11 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                     event.instructor.toLowerCase().includes(searchTerm) ||
                     event.classroom.toLowerCase().includes(searchTerm)
                 );
+            }}
+            
+            // Term filter
+            if (termFilter) {{
+                filtered = filtered.filter(event => event.term === termFilter);
             }}
             
             // Subject filter
@@ -629,6 +664,7 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
         
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', applyFilters);
+        document.getElementById('termFilter').addEventListener('change', applyFilters);
         document.getElementById('subjectFilter').addEventListener('change', applyFilters);
         document.getElementById('timeFilter').addEventListener('change', applyFilters);
         
