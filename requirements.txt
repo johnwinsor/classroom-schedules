@@ -1,0 +1,11 @@
+# Requirements for Banner Course Schedule Scraper and Classroom Schedule Generator
+
+# Web scraping and HTTP requests
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data manipulation and analysis
+pandas>=2.0.0
+
+# CSV handling (part of Python standard library, but listed for clarity)
+# csv - built-in module

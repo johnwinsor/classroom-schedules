@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Schedules</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .navigation {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .classroom-selector {
+            font-size: 16px;
+            padding: 10px 15px;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+            background-color: white;
+            color: #2c3e50;
+            cursor: pointer;
+            min-width: 250px;
+        }
+        
+        .classroom-selector:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+        }
+        
+        .nav-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+        
+        .classroom-section {
+            margin-bottom: 50px;
+            break-inside: avoid;
+        }
+        
+        .classroom-title {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            margin: 20px 0 10px 0;
+            border-radius: 8px;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .schedule-table th {
+            background: linear-gradient(135deg, #34495e, #2c3e50);
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid #2c3e50;
+        }
+        
+        .schedule-table th.time-header {
+            width: 100px;
+            min-width: 100px;
+        }
+        
+        .schedule-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            vertical-align: top;
+            background-color: #fff;
+            min-height: 60px;
+        }
+        
+        .schedule-table td.time-cell {
+            background-color: #ecf0f1;
+            font-weight: bold;
+            text-align: center;
+            white-space: nowrap;
+            width: 100px;
+            min-width: 100px;
+        }
+        
+        .schedule-table td.empty-cell {
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+        
+        .course-block {
+            background: linear-gradient(135deg, #e8f4fd, #d1ecf1);
+            border: 1px solid #3498db;
+            border-radius: 6px;
+            padding: 6px;
+            margin: 2px 0;
+            font-size: 11px;
+            line-height: 1.2;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .course-code {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 12px;
+        }
+        
+        .course-title {
+            color: #34495e;
+            font-size: 10px;
+            margin: 2px 0;
+            font-style: italic;
+        }
+        
+        .course-instructor {
+            color: #7f8c8d;
+            font-size: 10px;
+        }
+        
+        .course-enrollment {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 10px;
+            float: right;
+        }
+        
+        .generation-info {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        @media print {
+            .classroom-section {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                page-break-before: always;
+            }
+            
+            .schedule-table {
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .schedule-table {
+                font-size: 10px;
+            }
+            
+            .schedule-table th, .schedule-table td {
+                padding: 4px;
+            }
+        }
+    </style>
+    <script>
+        function jumpToClassroom() {
+            const selector = document.getElementById('classroomSelector');
+            const selectedClassroom = selector.value;
+            if (selectedClassroom) {
+                document.getElementById(selectedClassroom).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Northeastern University Oakland: Winter/Spring 2026 Classroom Schedules</h2>
+        <h4>Schedules are subject to change and not all classes may be shown.  <a href=
+        "{csv_file}">CSV data file available.</a></h4>
+        <h4>Please see the <a href="https://nubanner.neu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Online Course Schedule</a> for the latest updates.</h4>
+        <div class="navigation">
+            <span class="nav-label">Jump to Classroom:</span>
+            <select id="classroomSelector" class="classroom-selector" onchange="jumpToClassroom()">
+                <option value="">-- Select a Classroom --</option>
+                <option value="classroom_Aron_Art_Center_C_Ceramics_175A">Aron Art Center C Ceramics 175A</option>
+                <option value="classroom_Aron_Art_Center_C_Ceramics_179">Aron Art Center C Ceramics 179</option>
+                <option value="classroom_Aron_Art_Center_C_Ceramics_183">Aron Art Center C Ceramics 183</option>
+                <option value="classroom_Aron_Art_Center_E_Painting_166">Aron Art Center E Painting 166</option>
+                <option value="classroom_Aron_Art_Center_F_Photography_141">Aron Art Center F Photography 141</option>
+                <option value="classroom_Aron_Art_Center_F_Photography_153">Aron Art Center F Photography 153</option>
+                <option value="classroom_Education_Department_106">Education Department 106</option>
+                <option value="classroom_Graduate_School_of_Business_117">Graduate School of Business 117</option>
+                <option value="classroom_Lucie_Stern_027">Lucie Stern 027</option>
+                <option value="classroom_Lucie_Stern_035">Lucie Stern 035</option>
+                <option value="classroom_Mills_Hall_133">Mills Hall 133</option>
+                <option value="classroom_Natural_Science_101">Natural Science 101</option>
+                <option value="classroom_Vera_Long_140">Vera Long 140</option>
+            </select>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_C_Ceramics_175A">
+            <div class="classroom-title">CLASSROOM: Aron Art Center C Ceramics 175A</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">09:00-12:00</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-31</div>
+                                <div class="course-title">Int. Product Design Software</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">1/12</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-31</div>
+                                <div class="course-title">Int. Product Design Software</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">1/12</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-31</div>
+                                <div class="course-title">Int. Product Design Software</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">1/12</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-31</div>
+                                <div class="course-title">Int. Product Design Software</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">1/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:05-15:05</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-34</div>
+                                <div class="course-title">CNC Furniture</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/10</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-34</div>
+                                <div class="course-title">CNC Furniture</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/10</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-34</div>
+                                <div class="course-title">CNC Furniture</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/10</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-34</div>
+                                <div class="course-title">CNC Furniture</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/10</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_C_Ceramics_179">
+            <div class="classroom-title">CLASSROOM: Aron Art Center C Ceramics 179</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">13:30-15:30</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-32</div>
+                                <div class="course-title">Intro to Ceramics HandBuilding</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">15:00-18:00</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-30</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">7/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-30</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">7/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-30</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">7/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-30</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">7/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-35</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-35</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-35</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-35</div>
+                                <div class="course-title">Intro to Wheel Throwing</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">3/8</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_C_Ceramics_183">
+            <div class="classroom-title">CLASSROOM: Aron Art Center C Ceramics 183</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">10:35-12:15</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">GE 1502-301</div>
+                                <div class="course-title">Cornerstone of Engineering 2</div>
+                                <div class="course-instructor">Keyvani Someh, Leila</div>
+                                <div class="course-enrollment">36/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTF 1230-30</div>
+                                <div class="course-title">Making with Form and Materials</div>
+                                <div class="course-instructor">Sobieralski, Casondra</div>
+                                <div class="course-enrollment">1/12</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">GE 1502-301</div>
+                                <div class="course-title">Cornerstone of Engineering 2</div>
+                                <div class="course-instructor">Keyvani Someh, Leila</div>
+                                <div class="course-enrollment">36/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">GE 1502-300</div>
+                                <div class="course-title">Cornerstone of Engineering 2</div>
+                                <div class="course-instructor">Keyvani Someh, Leila</div>
+                                <div class="course-enrollment">38/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">GE 1502-300</div>
+                                <div class="course-title">Cornerstone of Engineering 2</div>
+                                <div class="course-instructor">Keyvani Someh, Leila</div>
+                                <div class="course-enrollment">38/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_E_Painting_166">
+            <div class="classroom-title">CLASSROOM: Aron Art Center E Painting 166</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">10:35-12:15</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTF 1210-30</div>
+                                <div class="course-title">Abstract Drawing</div>
+                                <div class="course-instructor">Pinkusevich, Yulia</div>
+                                <div class="course-enrollment">12/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTF 1220-30</div>
+                                <div class="course-title">Elements of Visual Composition</div>
+                                <div class="course-instructor">Pinkusevich, Yulia</div>
+                                <div class="course-enrollment">5/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">15:00-16:40</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1291-30</div>
+                                <div class="course-title">Studio for Typographic Systems</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">5/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">18:00-19:40</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1291-31</div>
+                                <div class="course-title">Studio for Typographic Systems</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">0/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_F_Photography_141">
+            <div class="classroom-title">CLASSROOM: Aron Art Center F Photography 141</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">13:00-16:00</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-33</div>
+                                <div class="course-title">Intro to Zine Making</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">0/15</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-33</div>
+                                <div class="course-title">Intro to Zine Making</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">0/15</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-33</div>
+                                <div class="course-title">Intro to Zine Making</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">0/15</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">INAM 2973-33</div>
+                                <div class="course-title">Intro to Zine Making</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">0/15</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">16:15-19:45</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTD 2360-30</div>
+                                <div class="course-title">Introduction to Photography</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">12/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Aron_Art_Center_F_Photography_153">
+            <div class="classroom-title">CLASSROOM: Aron Art Center F Photography 153</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTF 1240-30</div>
+                                <div class="course-title">Making with Video, Sound, and Animation</div>
+                                <div class="course-instructor">Lee, Clifford</div>
+                                <div class="course-enrollment">13/16</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Education_Department_106">
+            <div class="classroom-title">CLASSROOM: Education Department 106</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">17:15-20:35</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">EDUT 6305-1</div>
+                                <div class="course-title">Human Resource Management in Education</div>
+                                <div class="course-instructor">Galguera, Tomas</div>
+                                <div class="course-enrollment">2/10</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">EDUT 6307-1</div>
+                                <div class="course-title">Fiscal and Business Services</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">1/10</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Graduate_School_of_Business_117">
+            <div class="classroom-title">CLASSROOM: Graduate School of Business 117</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">08:45-10:25</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-30</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">12/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-30</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">12/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">10:35-12:15</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-31</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">32/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-31</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">32/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-32</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">22/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ECON 1115-32</div>
+                                <div class="course-title">Principles of Macroeconomics</div>
+                                <div class="course-instructor">Dave, Neha</div>
+                                <div class="course-enrollment">22/40</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Lucie_Stern_027">
+            <div class="classroom-title">CLASSROOM: Lucie Stern 027</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">11:50-13:30</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1290-30</div>
+                                <div class="course-title">Typographic Systems</div>
+                                <div class="course-instructor">TBA</div>
+                                <div class="course-enrollment">5/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Lucie_Stern_035">
+            <div class="classroom-title">CLASSROOM: Lucie Stern 035</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">10:35-12:15</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ACCT 2301-30</div>
+                                <div class="course-title">Profit Analysis for Managers and Advisors</div>
+                                <div class="course-instructor">Opare, Solomon</div>
+                                <div class="course-enrollment">19/28</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ACCT 2301-30</div>
+                                <div class="course-title">Profit Analysis for Managers and Advisors</div>
+                                <div class="course-instructor">Opare, Solomon</div>
+                                <div class="course-enrollment">19/28</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ACCT 2301-31</div>
+                                <div class="course-title">Profit Analysis for Managers and Advisors</div>
+                                <div class="course-instructor">Opare, Solomon</div>
+                                <div class="course-enrollment">20/28</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ACCT 2301-31</div>
+                                <div class="course-title">Profit Analysis for Managers and Advisors</div>
+                                <div class="course-instructor">Opare, Solomon</div>
+                                <div class="course-enrollment">20/28</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">17:15-20:35</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INSH 6500-2</div>
+                                <div class="course-title">Statistical Analysis</div>
+                                <div class="course-instructor">Evans, Samuel</div>
+                                <div class="course-enrollment">5/25</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">INSH 6300-2</div>
+                                <div class="course-title">Research Methods in the Social Sciences</div>
+                                <div class="course-instructor">Wright, Dana</div>
+                                <div class="course-enrollment">4/25</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Mills_Hall_133">
+            <div class="classroom-title">CLASSROOM: Mills Hall 133</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">06:50-08:30</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">EECE 7247-2</div>
+                                <div class="course-title">Radio Frequency Integrated Circuit Design</div>
+                                <div class="course-instructor">Onabajo, Marvin</div>
+                                <div class="course-enrollment">1/10</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">EECE 7247-2</div>
+                                <div class="course-title">Radio Frequency Integrated Circuit Design</div>
+                                <div class="course-instructor">Onabajo, Marvin</div>
+                                <div class="course-enrollment">1/10</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Natural_Science_101">
+            <div class="classroom-title">CLASSROOM: Natural Science 101</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">08:45-10:25</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ENVR 1200-2</div>
+                                <div class="course-title">Dynamic Earth</div>
+                                <div class="course-instructor">Faul, Kristina</div>
+                                <div class="course-enrollment">7/16</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ENVR 1200-2</div>
+                                <div class="course-title">Dynamic Earth</div>
+                                <div class="course-instructor">Faul, Kristina</div>
+                                <div class="course-enrollment">7/16</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">11:45-14:40</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ENVR 1201-4</div>
+                                <div class="course-title">Lab for ENVR 1200</div>
+                                <div class="course-instructor">Faul, Kristina</div>
+                                <div class="course-enrollment">4/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">12:00-16:00</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">BIOT 5145-6</div>
+                                <div class="course-title">Biotechnology Lab Skills</div>
+                                <div class="course-instructor">Gaidarenko, Olga</div>
+                                <div class="course-enrollment">2/16</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">BIOT 5145-6</div>
+                                <div class="course-title">Biotechnology Lab Skills</div>
+                                <div class="course-instructor">Gaidarenko, Olga</div>
+                                <div class="course-enrollment">2/16</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">BIOT 5145-6</div>
+                                <div class="course-title">Biotechnology Lab Skills</div>
+                                <div class="course-instructor">Gaidarenko, Olga</div>
+                                <div class="course-enrollment">2/16</div>
+                            </div>
+                            <div class="course-block">
+                                <div class="course-code">BIOT 5145-6</div>
+                                <div class="course-title">Biotechnology Lab Skills</div>
+                                <div class="course-instructor">Gaidarenko, Olga</div>
+                                <div class="course-enrollment">2/16</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="classroom-section" id="classroom_Vera_Long_140">
+            <div class="classroom-title">CLASSROOM: Vera Long 140</div>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th class="time-header">Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-cell">12:25-14:05</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1270-30</div>
+                                <div class="course-title">Design: Process + Practices</div>
+                                <div class="course-instructor">Sobieralski, Casondra</div>
+                                <div class="course-enrollment">8/24</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                    <tr>
+                        <td class="time-cell">15:00-16:40</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1271-30</div>
+                                <div class="course-title">Studio for Design: Process + Practices</div>
+                                <div class="course-instructor">Sobieralski, Casondra</div>
+                                <div class="course-enrollment">4/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                        <td class="empty-cell">—</td>
+                        <td>
+                            <div class="course-block">
+                                <div class="course-code">ARTG 1271-31</div>
+                                <div class="course-title">Studio for Design: Process + Practices</div>
+                                <div class="course-instructor">Sobieralski, Casondra</div>
+                                <div class="course-enrollment">3/12</div>
+                            </div>
+                        </td>
+                        <td class="empty-cell">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="generation-info">
+            Generated on December 01, 2025 at 12:48 PM
+        </div>
+    </div>
+    </body>
+    </html>
