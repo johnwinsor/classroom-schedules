@@ -922,7 +922,7 @@ class BannerScraper:
     def _write_csv_file(self, courses: List[CourseSection], filename: str):
         """Write courses to CSV file"""
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            fieldnames = ['CRN', 'Subject', 'Course Number', 'Title', 'Section', 
+            fieldnames = ['Term', 'Term Code', 'CRN', 'Subject', 'Course Number', 'Title', 'Section', 
                          'Instructor', 'Days', 'Time', 'Campus', 'Classroom', 
                          'Credits', 'Enrollment Actual', 'Enrollment Maximum']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -930,6 +930,8 @@ class BannerScraper:
             writer.writeheader()
             for course in courses:
                 writer.writerow({
+                    'Term': getattr(course, 'term_description', 'N/A'),
+                    'Term Code': getattr(course, 'term_code', 'N/A'),
                     'CRN': course.course_reference_number,
                     'Subject': course.subject,
                     'Course Number': course.course_number,

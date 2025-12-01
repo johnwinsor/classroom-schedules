@@ -266,11 +266,11 @@ def generate_html_header(csv_file):
 </head>
 <body>
     <div class="container">
-        <h2>Northeastern University Oakland: Winter/Spring 2026 Classroom Schedules</h2>
+        <h2>Northeastern University Oakland: Fall 2025 Classroom Schedules</h2>
         <h4>Schedules are subject to change and not all classes may be shown.  <a href=
-        "{csv_file}">CSV data file available.</a></h4>
+        "%(csv_file)s">CSV data file available.</a></h4>
         <h4>Please see the <a href="https://nubanner.neu.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search">Online Course Schedule</a> for the latest updates.</h4>
-"""
+""" % {'csv_file': csv_file}
 
 def generate_navigation_menu(sorted_classrooms):
     """Generate navigation dropdown menu"""
