@@ -7,6 +7,7 @@ import pandas as pd
 import json
 from datetime import datetime
 from collections import defaultdict
+from html import unescape
 
 def parse_time(time_str):
     """Parse time string like '1150 - 1330' and return start and end in HH:MM format"""
@@ -99,9 +100,9 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                     for day in days:
                         event = {
                             'title': f"{row['Subject']} {row['Course Number']}-{row['Section']}",
-                            'courseName': str(row['Title']),
-                            'instructor': str(row['Instructor']),
-                            'classroom': str(row['Classroom']),
+                            'courseName': unescape(str(row['Title'])),
+                            'instructor': unescape(str(row['Instructor'])),
+                            'classroom': unescape(str(row['Classroom'])),
                             'enrollment': f"{row['Enrollment Actual']}/{row['Enrollment Maximum']}",
                             'day': day,
                             'start': start_time,
