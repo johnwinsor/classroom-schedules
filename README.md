@@ -71,17 +71,32 @@ The script will:
 uv run calendar-view.py
 ```
 
-When prompted, enter the CSV filename (or press Enter for default):
+📁 Available CSV files:
+------------------------------------------------------------
+1. courses_combined_202630_202625.csv
+   Modified: 2024-12-01 14:23:15
+   Size: 45,832 bytes
 
-```
-Enter the CSV file name [courses_combined_202630_202625.csv]: 
-```
+2. courses_combined_202615_202610.csv
+   Modified: 2024-11-28 09:12:43
+   Size: 42,190 bytes
+
+Select a file [1-2] or press Enter for most recent:
 
 The generated HTML can be:
 
 - Opened directly in any web browser
 - Hosted on a web server
 - Shared with colleagues
+
+Features:
+
+Lists only non-backup CSV files (excludes _OLD files)
+Shows modification date and file size
+Sorted by newest first
+Press Enter to use the most recent file
+Enter a number to select a specific file
+If only one CSV exists, automatically uses it
 
 ## Installation
 
@@ -361,5 +376,10 @@ Banner Course Model
 
 ## Extending calendar-view.py
 
-1. Add to event array (line 101
-2. Add to modalBody (line 586)
+1. Add to event array (line 101)
+   `- 'instructionalMethod': unescape(str(row['Instructional Method'])),`
+2. Add to modalBody (line 617)
+    <div class="modal-row">
+      <div class="modal-label">Instuctional Method:</div>
+      <div class="modal-value">${{event.instructionalMethod}}</div>
+    </div>

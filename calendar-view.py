@@ -415,6 +415,11 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
         <div class="header">
             <h1>📅 Course Calendar</h1>
             <p>Interactive weekly schedule view</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <a href="{csv_file}" style="color: white; text-decoration: underline;" download>
+                    📥 Download CSV Data
+                </a>
+            </p>
         </div>
         
         <div class="controls">
@@ -699,10 +704,54 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
     print(f"📚 Subjects: {len(subjects)}")
 
 if __name__ == "__main__":
-    # Ask user for CSV file
-    csv_file = input("Enter the CSV file name [courses_combined_202630_202625.csv]: ").strip()
-    if not csv_file:
-        csv_file = 'courses_combined_202630_202625.csv'
+    import glob
+    import os
+    
+    # Find all CSV files that don't have _OLD in the name
+    csv_files = [f for f in glob.glob('courses_combined_*.csv') if '_OLD' not in f]
+    
+    if not csv_files:
+        print("❌ No CSV files found in current directory")
+        print("Run bscraper-compare.py first to generate course data")
+        exit(1)
+    
+    # Sort by modification time (newest first)
+    csv_files.sort(key=os.path.getmtime, reverse=True)
+    
+    # Display available files
+    print("\n📁 Available CSV files:")
+    print("-" * 60)
+    for i, csv_file in enumerate(csv_files, 1):
+        mtime = datetime.fromtimestamp(os.path.getmtime(csv_file))
+        file_size = os.path.getsize(csv_file)
+        print(f"{i}. {csv_file}")
+        print(f"   Modified: {mtime.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"   Size: {file_size:,} bytes")
+        print()
+    
+    # Get user selection
+    if len(csv_files) == 1:
+        print(f"Using only available file: {csv_files[0]}")
+        csv_file = csv_files[0]
+    else:
+        while True:
+            selection = input(f"Select a file [1-{len(csv_files)}] or press Enter for most recent: ").strip()
+            
+            if not selection:
+                csv_file = csv_files[0]
+                print(f"Using: {csv_file}")
+                break
+            
+            try:
+                idx = int(selection) - 1
+                if 0 <= idx < len(csv_files):
+                    csv_file = csv_files[idx]
+                    print(f"Using: {csv_file}")
+                    break
+                else:
+                    print(f"❌ Please enter a number between 1 and {len(csv_files)}")
+            except ValueError:
+                print("❌ Please enter a valid number")
     
     output_file = 'course_calendar.html'
     generate_calendar_html(csv_file, output_file)
