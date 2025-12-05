@@ -259,3 +259,107 @@ For internal use at F.W. Olin Library, Mills College at Northeastern University.
 
 **Last Updated:** December 2024  
 **Maintained by:** Technical Services, Olin Library
+
+## Extending
+
+Banner Course Model
+
+```JSON
+{
+  "id": 502389,
+  "term": "202630",
+  "termDesc": "Spring 2026 Semester",
+  "courseReferenceNumber": "40312",
+  "partOfTerm": "1",
+  "courseNumber": "7247",
+  "subject": "EECE",
+  "subjectDescription": "Electrical and Comp Engineerng",
+  "sequenceNumber": "02",
+  "campusDescription": "Oakland, CA",
+  "scheduleTypeDescription": "Lecture",
+  "courseTitle": "Radio Frequency Integrated Circuit Design",
+  "creditHours": null,
+  "maximumEnrollment": 10,
+  "enrollment": 1,
+  "seatsAvailable": 9,
+  "waitCapacity": 0,
+  "waitCount": 0,
+  "waitAvailable": 0,
+  "crossList": null,
+  "crossListCapacity": null,
+  "crossListCount": null,
+  "crossListAvailable": null,
+  "creditHourHigh": null,
+  "creditHourLow": 4,
+  "creditHourIndicator": null,
+  "openSection": true,
+  "linkIdentifier": null,
+  "isSectionLinked": false,
+  "subjectCourse": "EECE7247",
+  "faculty": [],
+  "meetingsFaculty": [
+    {
+      "category": "01",
+      "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+      "courseReferenceNumber": "40312",
+      "faculty": [],
+      "meetingTime": {
+        "beginTime": "0650",
+        "building": "M44",
+        "buildingDescription": "Mills Hall",
+        "campus": "OAK",
+        "campusDescription": "Oakland, CA",
+        "category": "01",
+        "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+        "courseReferenceNumber": "40312",
+        "creditHourSession": 4.0,
+        "endDate": "04/26/2026",
+        "endTime": "0830",
+        "friday": true,
+        "hoursWeek": 3.33,
+        "meetingScheduleType": "LEC",
+        "meetingType": "CLAS",
+        "meetingTypeDescription": "Class",
+        "monday": false,
+        "room": "133",
+        "saturday": false,
+        "startDate": "01/07/2026",
+        "sunday": false,
+        "term": "202630",
+        "thursday": false,
+        "tuesday": true,
+        "wednesday": false
+      },
+      "term": "202630"
+    }
+  ],
+  "reservedSeatSummary": null,
+  "sectionAttributes": [
+    {
+      "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+      "code": "GBEN",
+      "courseReferenceNumber": "40312",
+      "description": "GSEN Engineering",
+      "isZTCAttribute": false,
+      "termCode": "202630"
+    }
+  ],
+  "instructionalMethod": "LC",
+  "instructionalMethodDescription": "Live Cast"
+}
+```
+## Extending bscraper-compare.py
+
+1. Add new element to data model (line 27)
+   - class CourseSection:
+2. Add to course (line 763)
+   - CourseSection object
+3. Add to csv fieldnames (line 925)
+   - fieldnames
+4. Add to csv writer (line 932)
+   - writer.writerow
+
+## Extending calendar-view.py
+
+1. Add to event array (line 101
+2. Add to modalBody (line 586)

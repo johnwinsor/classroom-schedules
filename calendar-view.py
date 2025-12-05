@@ -103,6 +103,7 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                             'courseName': unescape(str(row['Title'])),
                             'instructor': unescape(str(row['Instructor'])),
                             'classroom': unescape(str(row['Classroom'])),
+                            'instructionalMethod': unescape(str(row['Instructional Method'])),
                             'enrollment': f"{row['Enrollment Actual']}/{row['Enrollment Maximum']}",
                             'day': day,
                             'start': start_time,
@@ -607,6 +608,10 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                 <div class="modal-row">
                     <div class="modal-label">Classroom:</div>
                     <div class="modal-value">${{event.classroom}}</div>
+                </div>
+                <div class="modal-row">
+                    <div class="modal-label">Instuctional Method:</div>
+                    <div class="modal-value">${{event.instructionalMethod}}</div>
                 </div>
                 <div class="modal-row">
                     <div class="modal-label">Enrollment:</div>

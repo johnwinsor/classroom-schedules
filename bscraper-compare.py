@@ -41,6 +41,7 @@ class CourseSection:
     credit_hour_low: str
     credit_hour_high: str
     credits_formatted: str
+    instructional_method: str
 
 @dataclass
 class CourseComparison:
@@ -736,6 +737,7 @@ class BannerScraper:
             crn = course.get('courseReferenceNumber', '')
             subject = course.get('subject', '')
             course_num = course.get('courseNumber', '')
+            instructional_method = course.get('instructionalMethodDescription', 'TBA')
             
             # Progress update every 10 courses or for the last course
             if i % 10 == 0 or i == len(all_courses):
@@ -772,6 +774,7 @@ class BannerScraper:
                 time=meeting_components['time'],  # New field for CSV  
                 campus=meeting_components['campus'],  # New field for CSV
                 classroom=meeting_components['classroom'],  # New field for CSV
+                instructional_method=instructional_method,
                 enrollment_info=enrollment_data,
                 credit_hour_low=credit_low,
                 credit_hour_high=credit_high,
@@ -923,7 +926,7 @@ class BannerScraper:
         """Write courses to CSV file"""
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['Term', 'Term Code', 'CRN', 'Subject', 'Course Number', 'Title', 'Section', 
-                         'Instructor', 'Days', 'Time', 'Campus', 'Classroom', 
+                         'Instructor', 'Days', 'Time', 'Campus', 'Classroom', 'Instructional Method', 
                          'Credits', 'Enrollment Actual', 'Enrollment Maximum']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
@@ -942,6 +945,7 @@ class BannerScraper:
                     'Time': course.time,
                     'Campus': course.campus,
                     'Classroom': course.classroom,
+                    'Instructional Method': course.instructional_method,
                     'Credits': course.credits_formatted,
                     'Enrollment Actual': course.enrollment_info.get('enrollment_actual', 'N/A'),
                     'Enrollment Maximum': course.enrollment_info.get('enrollment_maximum', 'N/A')
