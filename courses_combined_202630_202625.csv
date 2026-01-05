@@ -1,221 +1,220 @@
 Term,Term Code,CRN,Subject,Course Number,Title,Section,Instructor,Days,Time,Campus,Classroom,Instructional Method,Credits,Enrollment Actual,Enrollment Maximum
-Spring 2026 Semester,202630,32782,ACCT,1201,Financial Accounting and Reporting,30,"Gu, Kai",MWR,1035 - 1140,OAK,Graduate School of Business 117,Traditional,4,29,44
-Spring 2026 Semester,202630,33279,ACCT,1201,Financial Accounting and Reporting,31,"Gu, Kai",MWR,1335 - 1440,OAK,CPM 100,Traditional,4,28,44
-Spring 2026 Semester,202630,33281,ACCT,2301,Profit Analysis for Managers and Advisors,30,"Opare, Solomon",TF,1035 - 1215,OAK,Lucie Stern 035,Traditional,4,19,28
+Spring 2026 Semester,202630,32782,ACCT,1201,Financial Accounting and Reporting,30,"Gu, Kai",MWR,1035 - 1140,OAK,Graduate School of Business 117,Traditional,4,33,44
+Spring 2026 Semester,202630,33279,ACCT,1201,Financial Accounting and Reporting,31,"Gu, Kai",MWR,1335 - 1440,OAK,CPM 100,Traditional,4,29,44
+Spring 2026 Semester,202630,33281,ACCT,2301,Profit Analysis for Managers and Advisors,30,"Opare, Solomon",TF,1035 - 1215,OAK,Lucie Stern 035,Traditional,4,20,28
 Spring 2026 Semester,202630,38806,ACCT,2301,Profit Analysis for Managers and Advisors,31,"Opare, Solomon",TF,1225 - 1405,OAK,Lucie Stern 035,Traditional,4,21,28
-Spring 2026 Semester,202630,32783,ANTH,1101,Peoples and Cultures,30,"Montes, Vince",TR,1500 - 1640,OAK,Lucie Stern 026,Traditional,4,14,17
-Spring 2026 Semester,202630,32785,ARCH,2130,"Site, Space, Program",30,"Hirschman, Sarah",MW,1150 - 1420,XCR,Unidentified campus ROOM,Traditional,6,9,11
+Spring 2026 Semester,202630,32783,ANTH,1101,Peoples and Cultures,30,"Montes, Vince",TR,1500 - 1640,OAK,Lucie Stern 026,Traditional,4,17,17
+Spring 2026 Semester,202630,32785,ARCH,2130,"Site, Space, Program",30,"Hirschman, Sarah",MW,1150 - 1420,XCR,Unidentified campus ROOM,Traditional,6,10,11
 Spring 2026 Semester,202630,32758,ARCH,2240,Architectonic Systems,30,"Papke, Hans",WF,0845 - 1025,OAK,Aron Art Center C Ceramics 183,Traditional,4,10,25
-Spring 2026 Semester,202630,32786,ARCH,2370,Topics in Architectural History,30,"Stewart, Alexander",TF,1035 - 1215,XCR,Unidentified campus ROOM,Traditional,4,11,30
-Spring 2026 Semester,202630,39531,ARTG,1270,Design: Process + Practices,30,"Sobieralski, Casondra",T,1225 - 1405,OAK,Vera Long 140,Traditional,2,10,24
-Spring 2026 Semester,202630,39532,ARTG,1271,Studio for Design: Process + Practices,30,"Sobieralski, Casondra",T,1500 - 1640,OAK,Vera Long 140,Traditional,2,5,12
+Spring 2026 Semester,202630,32786,ARCH,2370,Topics in Architectural History,30,"Stewart, Alexander",TF,1035 - 1215,OAK,CPM 102,Traditional,4,13,30
+Spring 2026 Semester,202630,39531,ARTG,1270,Design: Process + Practices,30,"Sobieralski, Casondra",T,1225 - 1405,OAK,Vera Long 140,Traditional,2,11,24
+Spring 2026 Semester,202630,39532,ARTG,1271,Studio for Design: Process + Practices,30,"Sobieralski, Casondra",T,1500 - 1640,OAK,Vera Long 140,Traditional,2,7,12
 Spring 2026 Semester,202630,39533,ARTG,1271,Studio for Design: Process + Practices,31,"Sobieralski, Casondra",F,1500 - 1640,OAK,Vera Long 140,Traditional,2,4,12
-Spring 2026 Semester,202630,33289,ARTG,1290,Typographic Systems,30,"Greer, Larissa",W,1150 - 1330,OAK,Lucie Stern 027,Traditional,2,6,12
+Spring 2026 Semester,202630,33289,ARTG,1290,Typographic Systems,30,"Greer, Larissa",W,1150 - 1330,OAK,Graduate School of Business 241,Traditional,2,6,12
 Spring 2026 Semester,202630,39534,ARTG,1291,Studio for Typographic Systems,30,"Greer, Larissa",W,1500 - 1640,OAK,Aron Art Center E Painting 166,Traditional,2,6,12
-Spring 2026 Semester,202630,33810,ARTF,1210,Abstract Drawing,30,"Pinkusevich, Yulia",T,1035 - 1215,OAK,Aron Art Center E Painting 166,Traditional,2,11,12
-Spring 2026 Semester,202630,33820,ARTF,1220,Elements of Visual Composition,30,"Pinkusevich, Yulia",T,1225 - 1405,OAK,Aron Art Center E Painting 166,Traditional,2,8,12
-Spring 2026 Semester,202630,33830,ARTF,1230,Making with Form and Materials,30,"Sobieralski, Casondra",R,1500 - 1640,OAK,Aron Art Center C Ceramics 183,Traditional,2,3,12
-Spring 2026 Semester,202630,39502,ARTF,1240,"Making with Video, Sound, and Animation",30,"Lee, Clifford",F,1225 - 1405,OAK,Aron Art Center F Photography 153,Traditional,2,14,16
+Spring 2026 Semester,202630,33810,ARTF,1210,Abstract Drawing,30,"Pinkusevich, Yulia",T,1035 - 1215,OAK,Aron Art Center E Painting 166,Traditional,2,12,12
+Spring 2026 Semester,202630,33820,ARTF,1220,Elements of Visual Composition,30,"Pinkusevich, Yulia",T,1225 - 1405,OAK,Aron Art Center E Painting 166,Traditional,2,11,12
+Spring 2026 Semester,202630,33830,ARTF,1230,Making with Form and Materials,30,"Sobieralski, Casondra",R,1500 - 1640,OAK,Aron Art Center C Ceramics 183,Traditional,2,4,12
+Spring 2026 Semester,202630,39502,ARTF,1240,"Making with Video, Sound, and Animation",30,"Lee, Clifford",F,1225 - 1405,OAK,Aron Art Center F Photography 153,Traditional,2,15,16
 Spring 2026 Semester,202630,39530,ARTD,2360,Introduction to Photography,30,"Lucas, Kija",M,1615 - 1945,OAK,Aron Art Center F Photography 141,Traditional,4,12,12
-Spring 2026 Semester,202630,37607,BINF,6200,Bioinformatics Programming,07,"Bowser, Bradley",R,1800 - 2120,OAK,CPM 102,Traditional,4,3,25
-Spring 2026 Semester,202630,37614,BINF,6310,Introduction to Bioinformatics,05,"Miller, Nicholas",W,1800 - 2120,OAK,CPM 102,Traditional,4,4,25
+Spring 2026 Semester,202630,37607,BINF,6200,Bioinformatics Programming,07,"Bowser, Bradley",R,1800 - 2120,OAK,CPM 102,Traditional,4,5,25
+Spring 2026 Semester,202630,37614,BINF,6310,Introduction to Bioinformatics,05,"Miller, Nicholas",W,1800 - 2120,OAK,CPM 102,Traditional,4,6,25
 Spring 2026 Semester,202630,37623,BINF,6420,Omics in Bioinformatics,03,"Miller, Nicholas",T,1800 - 2120,OAK,Natural Science 212,Traditional,4,4,25
-Spring 2026 Semester,202630,32753,BIOL,1113,General Biology 2,30,"Fowler, Melinda",MWR,1035 - 1140,OAK,Aron Art Center A 120,Traditional,4,64,72
+Spring 2026 Semester,202630,32753,BIOL,1113,General Biology 2,30,"Fowler, Melinda",MWR,1035 - 1140,OAK,Aron Art Center A 120,Traditional,4,63,72
 Spring 2026 Semester,202630,32754,BIOL,1114,Lab for BIOL 1113,30,"Betts-Ng, Charlene",T,0800 - 1050,OAK,Natural Science 181,Traditional,1,10,24
-Spring 2026 Semester,202630,32916,BIOL,1114,Lab for BIOL 1113,31,"Betts-Ng, Charlene",T,1150 - 1440,OAK,Natural Science 181,Traditional,1,23,24
-Spring 2026 Semester,202630,33489,BIOL,1114,Lab for BIOL 1113,33,"Betts-Ng, Charlene",R,1150 - 1440,OAK,Natural Science 181,Traditional,1,16,24
+Spring 2026 Semester,202630,32916,BIOL,1114,Lab for BIOL 1113,31,"Betts-Ng, Charlene",T,1150 - 1440,OAK,Natural Science 181,Traditional,1,24,24
+Spring 2026 Semester,202630,33489,BIOL,1114,Lab for BIOL 1113,33,"Betts-Ng, Charlene",R,1150 - 1440,OAK,Natural Science 181,Traditional,1,14,24
 Spring 2026 Semester,202630,34552,BIOL,1114,Lab for BIOL 1113,35,"Betts-Ng, Charlene",W,1150 - 1440,OAK,Natural Science 181,Traditional,1,11,24
-Spring 2026 Semester,202630,33294,BIOL,2299,Inquiries:Globl Change Ecology,30,"Swope, Sarah",MW,1150 - 1330,OAK,Graduate School of Business 125,Traditional,4,22,22
+Spring 2026 Semester,202630,33294,BIOL,2299,Inquiries:Globl Change Ecology,30,"Swope, Sarah",MW,1150 - 1330,OAK,Graduate School of Business 125,Traditional,4,23,22
 Spring 2026 Semester,202630,34151,BIOL,2299,Inquiries in Biological Sciences,33,"Phong, Connie",TR,1500 - 1640,OAK,Lucie Stern 006,Traditional,4,12,17
-Spring 2026 Semester,202630,39565,BIOL,2299,Inquiries in Biological Sciences,35,"Phong, Connie",MW,1150 - 1330,OAK,Graduate School of Business 117,Traditional,4,6,22
-Spring 2026 Semester,202630,34152,BIOL,2301,Genetics and Molecular Biology,04,"Young, Jared",MW,1150 - 1330,OAK,Natural Science 217,Traditional,4,35,36
-Spring 2026 Semester,202630,34153,BIOL,2302,Lab for BIOL 2301,19,"Young, Jared",F,1225 - 1405,OAK,Natural Science 212,Traditional,1,26,36
-Spring 2026 Semester,202630,39824,BIOL,2302,Lab for BIOL 2301,20,"Young, Jared",W,1500 - 1720,OAK,Natural Science 171,Traditional,1,5,20
-Spring 2026 Semester,202630,39566,BIOL,3413,ST: Marine Mammals,01,"Fowler, Melinda",MWR,1335 - 1440,OAK,Graduate School of Business 117,Traditional,4,24,40
-Spring 2026 Semester,202630,37640,BIOT,5145,Biotechnology Lab Skills,06,"Gaidarenko, Olga",M; M; M; M,1200 - 1600; 1200 - 1600; 1200 - 1600; 1200 - 1600,OAK; OAK; OAK; OAK,Natural Science 101; Natural Science 101; Natural Science 101; Natural Science 101,Hybrid,1,2,16
-Spring 2026 Semester,202630,37683,BIOT,5621,Protein Principles in Biotechnology,10,"Louie, Maggie",R,1800 - 2030,OAK,Natural Science 212,Traditional,3,3,30
-Spring 2026 Semester,202630,37703,BIOT,5750,Molecular Approaches in Biotechnology,10,"Gilmore, Sean",T,1800 - 2030,OAK,CPM 102,Traditional,3,4,30
-Spring 2026 Semester,202630,37719,BIOT,6214,Experimental Design and Biostatistics,08,"Gaidarenko, Olga",W,1800 - 2000,OAK,Natural Science 212,Traditional,2,4,30
-Spring 2026 Semester,202630,39158,BUSN,4945,In-the-Field Experiential Professional Practicum,01,"Karniouchina, Ekaterina; Cooney, Magdalena",T,0845 - 1200,OAK,Graduate School of Business 109,Traditional,8,21,25
-Spring 2026 Semester,202630,32757,CHEM,1161,General Chemistry for Science Majors,30,"Cassano, Jennifer",TR,1500 - 1640,OAK,Natural Science 215,Traditional,4,34,40
-Spring 2026 Semester,202630,33296,CHEM,1161,General Chemistry for Science Majors,31,"Cassano, Jennifer",MW,1150 - 1330,OAK,Education Department 101,Traditional,4,32,35
-Spring 2026 Semester,202630,32762,CHEM,1162,Lab for CHEM 1161,30,"Faul, Kristina",T,1150 - 1440,OAK,Natural Science 206,Traditional,1,15,16
-Spring 2026 Semester,202630,33297,CHEM,1162,Lab for CHEM 1161,31,"Faul, Kristina",F,1035 - 1325,OAK,Natural Science 206,Traditional,1,15,16
-Spring 2026 Semester,202630,34108,CHEM,1162,Lab for CHEM 1161,32,"Faul, Kristina",M,1150 - 1440,OAK,Natural Science 206,Traditional,1,11,16
-Spring 2026 Semester,202630,40958,CHEM,1162,Lab for CHEM 1161,33,"Cassano, Jennifer",F,1030 - 1325,OAK,Natural Science 101,Traditional,1,0,16
+Spring 2026 Semester,202630,39565,BIOL,2299,Inquiries in Biological Sciences,35,"Phong, Connie",MW,1150 - 1330,OAK,Graduate School of Business 117,Traditional,4,7,22
+Spring 2026 Semester,202630,34152,BIOL,2301,Genetics and Molecular Biology,04,"Young, Jared",MW,1150 - 1330,OAK,Natural Science 217,Traditional,4,36,36
+Spring 2026 Semester,202630,34153,BIOL,2302,Lab for BIOL 2301,19,"Young, Jared",F,1225 - 1405,OAK,Natural Science 212,Traditional,1,28,36
+Spring 2026 Semester,202630,39824,BIOL,2302,Lab for BIOL 2301,20,"Young, Jared",W,1500 - 1720,OAK,Natural Science 171,Traditional,1,4,20
+Spring 2026 Semester,202630,39566,BIOL,3413,ST: Marine Mammals,01,"Fowler, Melinda",MWR,1335 - 1440,OAK,Graduate School of Business 117,Traditional,4,23,40
+Spring 2026 Semester,202630,37640,BIOT,5145,Biotechnology Lab Skills,06,"Gaidarenko, Olga",M; M; M; M,1200 - 1600; 1200 - 1600; 1200 - 1600; 1200 - 1600,OAK; OAK; OAK; OAK,Natural Science 101; Natural Science 101; Natural Science 101; Natural Science 101,Hybrid,1,5,16
+Spring 2026 Semester,202630,37683,BIOT,5621,Protein Principles in Biotechnology,10,"Louie, Maggie",R,1800 - 2030,OAK,Natural Science 212,Traditional,3,6,30
+Spring 2026 Semester,202630,37703,BIOT,5750,Molecular Approaches in Biotechnology,10,"Gilmore, Sean",T,1800 - 2030,OAK,CPM 102,Traditional,3,7,30
+Spring 2026 Semester,202630,37719,BIOT,6214,Experimental Design and Biostatistics,08,"Gaidarenko, Olga",W,1800 - 2000,OAK,Natural Science 212,Traditional,2,7,30
+Spring 2026 Semester,202630,39158,BUSN,4945,In-the-Field Experiential Professional Practicum,01,"Karniouchina, Ekaterina; Cooney, Magdalena",T,0845 - 1200,OAK,Graduate School of Business 109,Traditional,8,23,23
+Spring 2026 Semester,202630,32757,CHEM,1161,General Chemistry for Science Majors,30,"Cassano, Jennifer",TR,1500 - 1640,OAK,Natural Science 215,Traditional,4,40,40
+Spring 2026 Semester,202630,33296,CHEM,1161,General Chemistry for Science Majors,31,"Cassano, Jennifer",MW,1150 - 1330,OAK,Natural Science 215,Traditional,4,37,40
+Spring 2026 Semester,202630,32762,CHEM,1162,Lab for CHEM 1161,30,"Faul, Kristina",T,1150 - 1440,OAK,Natural Science 206,Traditional,1,16,16
+Spring 2026 Semester,202630,33297,CHEM,1162,Lab for CHEM 1161,31,"Faul, Kristina",F,1035 - 1325,OAK,Natural Science 206,Traditional,1,16,16
+Spring 2026 Semester,202630,34108,CHEM,1162,Lab for CHEM 1161,32,"Faul, Kristina",M,1150 - 1440,OAK,Natural Science 206,Traditional,1,10,16
+Spring 2026 Semester,202630,40958,CHEM,1162,Lab for CHEM 1161,33,"Cassano, Jennifer",F,1030 - 1325,OAK,Natural Science 101,Traditional,1,4,16
 Spring 2026 Semester,202630,32761,CHEM,2311,Organic Chemistry 1,30,"Thomas, William",MWF,1500 - 1605,OAK,Natural Science 213,Traditional,4,60,60
-Spring 2026 Semester,202630,33298,CHEM,2311,Organic Chemistry 1,31,"Thomas, William",MWF,1615 - 1720,OAK,Natural Science 213,Traditional,4,27,60
+Spring 2026 Semester,202630,33298,CHEM,2311,Organic Chemistry 1,31,"Thomas, William",MWF,1615 - 1720,OAK,Natural Science 213,Traditional,4,31,60
 Spring 2026 Semester,202630,32764,CHEM,2312,Lab for CHEM 2311,300,"Snyder, Nicole",T,0845 - 1135,OAK,Natural Science 201,Traditional,1,16,16
 Spring 2026 Semester,202630,32895,CHEM,2312,Lab for CHEM 2311,301,"Thomas, William",R,0845 - 1135,OAK,Natural Science 201,Traditional,1,16,16
 Spring 2026 Semester,202630,33301,CHEM,2312,Lab for CHEM 2311,304,"Thomas, William",F,0845 - 1135,OAK,Natural Science 201,Traditional,1,16,16
-Spring 2026 Semester,202630,33302,CHEM,2312,Lab for CHEM 2311,305,"Thomas, William",R,1150 - 1440,OAK,Natural Science 201,Traditional,1,16,16
+Spring 2026 Semester,202630,33302,CHEM,2312,Lab for CHEM 2311,305,"Steele, Dustin",R,1150 - 1440,OAK,Natural Science 201,Traditional,1,16,16
 Spring 2026 Semester,202630,33303,CHEM,2312,Lab for CHEM 2311,306,"Snyder, Nicole",T,1150 - 1440,OAK,Natural Science 201,Traditional,1,16,16
-Spring 2026 Semester,202630,40959,CHEM,2312,Lab for CHEM 2311,307,"Steele, Dustin",R,1500 - 1750,OAK,Natural Science 101,Traditional,1,6,16
+Spring 2026 Semester,202630,40959,CHEM,2312,Lab for CHEM 2311,307,"Steele, Dustin",R,1500 - 1750,OAK,Natural Science 101,Traditional,1,9,16
 Spring 2026 Semester,202630,33304,COMM,1113,Business and Professional Speaking,30,"Abdi, Shadee",MWF,1500 - 1605,OAK,Lucie Stern 035,Traditional,4,19,19
-Spring 2026 Semester,202630,33305,COMM,1131,"Sex, Relationships, and Communication",30,"Abdi, Shadee",MWF,1615 - 1720,OAK,Lucie Stern 035,Traditional,4,11,25
-Spring 2026 Semester,202630,36032,CS,2100,Program Design and Implementation 1,05,"Bhalerao, Rasika",MWR,1035 - 1140,OAK,CPM 100,Traditional,4,38,40
-Spring 2026 Semester,202630,36033,CS,2100,Program Design and Implementation 1,06,"Monge, Alvaro",MWR,1335 - 1440,OAK,CPM 101,Traditional,4,27,39
-Spring 2026 Semester,202630,36035,CS,2101,Lab for CS 2100,01,"Bhalerao, Rasika",F,1035 - 1215,OAK,CPM 102,Traditional,1,27,27
+Spring 2026 Semester,202630,33305,COMM,1131,"Sex, Relationships, and Communication",30,"Abdi, Shadee",MWF,1615 - 1720,OAK,Lucie Stern 035,Traditional,4,13,25
+Spring 2026 Semester,202630,36032,CS,2100,Program Design and Implementation 1,05,"Bhalerao, Rasika",MWR,1035 - 1140,OAK,CPM 100,Traditional,4,37,40
+Spring 2026 Semester,202630,36033,CS,2100,Program Design and Implementation 1,06,"Bhalerao, Rasika",MWR,1335 - 1440,OAK,CPM 101,Traditional,4,30,39
+Spring 2026 Semester,202630,36035,CS,2101,Lab for CS 2100,01,"Bhalerao, Rasika",F,1035 - 1215,OAK,CPM 101,Traditional,1,27,27
 Spring 2026 Semester,202630,36037,CS,2101,Lab for CS 2100,03,"Bhalerao, Rasika",F,1225 - 1405,OAK,CPM 102,Traditional,1,25,27
-Spring 2026 Semester,202630,36038,CS,2101,Lab for CS 2100,04,"Bhalerao, Rasika",F,1500 - 1640,OAK,CPM 102,Traditional,1,13,27
-Spring 2026 Semester,202630,40246,CS,2535,Professional Practicum,01,"Monge, Alvaro",TR,1500 - 1640,OAK,Aron Art Center A 120,Traditional,4,10,25
+Spring 2026 Semester,202630,36038,CS,2101,Lab for CS 2100,04,"Bhalerao, Rasika",F,1500 - 1640,OAK,CPM 102,Traditional,1,15,27
+Spring 2026 Semester,202630,40246,CS,2535,Professional Practicum,01,"Monge, Alvaro",TR,1500 - 1640,OAK,Graduate School of Business 124,Traditional,4,10,20
 Spring 2026 Semester,202630,40247,CS,2535,Professional Practicum,02,"Fuentes-Cabrera, Miguel",MW,1150 - 1330,OAK,Lucie Stern 035,Traditional,4,25,25
-Spring 2026 Semester,202630,36059,CS,3100,Program Design and Implementation 2,01,"Spertus, Ellen",MWR,1035 - 1140,OAK,Graduate School of Business 118,Traditional,4,39,45
-Spring 2026 Semester,202630,36060,CS,3100,Program Design and Implementation 2,02,"Spertus, Ellen",MWR,1335 - 1440,OAK,Aron Art Center A 120,Traditional,4,38,45
-Spring 2026 Semester,202630,36065,CS,3101,Lab for CS 3100,01,"Spertus, Ellen",T,1225 - 1405,OAK,CPM 102,Traditional,1,30,30
+Spring 2026 Semester,202630,36059,CS,3100,Program Design and Implementation 2,01,"Spertus, Ellen",MWR,1035 - 1140,OAK,Graduate School of Business 118,Traditional,4,38,45
+Spring 2026 Semester,202630,36060,CS,3100,Program Design and Implementation 2,02,"Spertus, Ellen",MWR,1335 - 1440,OAK,Natural Science 215,Traditional,4,39,40
+Spring 2026 Semester,202630,36065,CS,3101,Lab for CS 3100,01,"Spertus, Ellen",T,1225 - 1405,OAK,CPM 102,Traditional,1,29,30
 Spring 2026 Semester,202630,36066,CS,3101,Lab for CS 3100,02,"Spertus, Ellen",T,1500 - 1640,OAK,CPM 102,Traditional,1,24,30
-Spring 2026 Semester,202630,36068,CS,3101,Lab for CS 3100,04,"Spertus, Ellen",T,1035 - 1215,OAK,Natural Science 212,Traditional,1,23,30
-Spring 2026 Semester,202630,33230,CS,3200,Introduction to Databases,31,"Guerra Gomez, John Alexis",MR,0845 - 1025,OAK,CPM 100,Traditional,4,42,60
-Spring 2026 Semester,202630,36102,CS,5004,Object-Oriented Design,30,"Bhalerao, Rasika",TR,1500 - 1640,OAK,Lucie Stern 010,Traditional,4,8,20
-Spring 2026 Semester,202630,36105,CS,5005,Recitation for CS 5004,30,"Bhalerao, Rasika",R,1650 - 1820,OAK,Lucie Stern 010,Traditional,TBA,8,20
+Spring 2026 Semester,202630,36068,CS,3101,Lab for CS 3100,04,"Spertus, Ellen",T,1035 - 1215,OAK,Natural Science 212,Traditional,1,24,30
+Spring 2026 Semester,202630,33230,CS,3200,Introduction to Databases,31,"Guerra Gomez, John Alexis",MR,0845 - 1025,OAK,CPM 100,Traditional,4,44,60
+Spring 2026 Semester,202630,36102,CS,5004,Object-Oriented Design,30,"Monge, Alvaro",WF,1500 - 1640,OAK,Lucie Stern 026,Traditional,4,8,17
+Spring 2026 Semester,202630,36105,CS,5005,Recitation for CS 5004,30,"Monge, Alvaro",W,1650 - 1820,OAK,Lucie Stern 026,Traditional,TBA,8,17
 Spring 2026 Semester,202630,36107,CS,5008,"Data Structures, Algorithms, and Their Applications within Computer Systems",30,"Wang, Susan",TF,1225 - 1405,OAK,Mills Hall 135,Traditional,4,8,20
 Spring 2026 Semester,202630,36111,CS,5009,Recitation for CS 5008,30,"Wang, Susan",F,1500 - 1630,OAK,Mills Hall 135,Traditional,TBA,8,20
-Spring 2026 Semester,202630,36125,CS,5100,Foundations of Artificial Intelligence,30,"Farahmand Asil, Maryam",TF,1035 - 1215,OAK,CPM 101,Traditional,4,13,39
-Spring 2026 Semester,202630,36139,CS,5700,Fundamentals of Computer Networking,30,"Konrad, Almudena",MW,1150 - 1330,OAK,Lucie Stern 014,Traditional,4,10,30
-Spring 2026 Semester,202630,36145,CS,5800,Algorithms,30,"Farahmand Asil, Maryam",TF,1225 - 1405,OAK,CPM 101,Traditional,4,11,39
+Spring 2026 Semester,202630,36125,CS,5100,Foundations of Artificial Intelligence,30,"Farahmand Asil, Maryam",TF,1035 - 1215,OAK,CPM 101,Traditional,4,15,39
+Spring 2026 Semester,202630,36139,CS,5700,Fundamentals of Computer Networking,30,"Konrad, Almudena",MW,1150 - 1330,OAK,Lucie Stern 014,Traditional,4,12,30
+Spring 2026 Semester,202630,36145,CS,5800,Algorithms,30,"Farahmand Asil, Maryam",TF,1225 - 1405,OAK,CPM 101,Traditional,4,12,39
 Spring 2026 Semester,202630,39507,CS,6650,Building Scalable Distributed Systems,30,"Coady, Monica",M,1300 - 1500,OAK,Mills Hall 318,Live Cast,4,5,5
-Spring 2026 Semester,202630,39563,CS,7180,SpTp: Vibe Coding,30,"Guerra Gomez, John Alexis",TR,1500 - 1640,OAK,Lucie Stern 035,Traditional,4,9,20
-Spring 2026 Semester,202630,36204,CS,7980,Research Capstone,30,"Fuentes-Cabrera, Miguel",W,1500 - 1820,OAK,Mills Hall 135,Traditional,4,20,20
-Spring 2026 Semester,202630,37099,CSYE,6225,Network Structures and Cloud Computing,30,"Alomari, Raja",R,1500 - 1820,OAK,Graduate School of Business 117,Traditional,4,4,30
-Spring 2026 Semester,202630,39770,EESC,6500,Pathways to Professional Success,12,TBA,M,1800 - 1940,OAK,Natural Science 212,Traditional,1,5,35
-Spring 2026 Semester,202630,38849,EXED,5945,Experiential Integration Seminar,05,TBA,M,1800 - 1900,XCR,Unidentified campus ROOM,Traditional,TBA,1,15
+Spring 2026 Semester,202630,39563,CS,7180,SpTp: Vibe Coding,30,"Guerra Gomez, John Alexis",TR,1500 - 1640,OAK,Lucie Stern 035,Traditional,4,13,20
+Spring 2026 Semester,202630,36204,CS,7980,Research Capstone,30,"Fuentes-Cabrera, Miguel",W,1500 - 1820,OAK,Mills Hall 135,Traditional,4,19,20
+Spring 2026 Semester,202630,37099,CSYE,6225,Network Structures and Cloud Computing,30,"Alomari, Raja",R,1500 - 1820,OAK,Graduate School of Business 117,Traditional,4,7,30
+Spring 2026 Semester,202630,39770,EESC,6500,Pathways to Professional Success,12,"Ochengco, Abigail; Harrison, Vanecia; Susienka, Alexander",M,1800 - 1940,OAK,Natural Science 212,Traditional,1,8,35
+Spring 2026 Semester,202630,38849,EXED,5945,Experiential Integration Seminar,05,"Powell, Megan",M; M; M; M; M; M; M; M; M,1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900; 1800 - 1900,OAK; OAK; OAK; OAK; OAK; OAK; OAK; OAK; OAK,Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027; Lucie Stern 027,Traditional,TBA,2,15
 Spring 2026 Semester,202630,33349,INNO,2301,Innovation!,31,"Gollu, Aleks",TR,1500 - 1640,OAK,Graduate School of Business 125,Traditional,4,10,25
-Spring 2026 Semester,202630,33295,CAEP,1280,Introduction to Mindfulness,30,"Oda, Takeshi",TR,1500 - 1640,XCR,Unidentified campus ROOM,Traditional,4,19,20
-Spring 2026 Semester,202630,38696,CRWT,1801,Writing Creatively in the Age of Artificial Intelligence,01,"Spahr, Juliana",TR,1500 - 1640,OAK,Education Department 106,Traditional,4,14,15
-Spring 2026 Semester,202630,39721,ENVR,1101,Environmental Science,03,"Faul, Kristina",WF,0845 - 1025,OAK,Natural Science 212,Traditional,4,9,28
-Spring 2026 Semester,202630,34148,ENVR,1200,Dynamic Earth,02,"Faul, Kristina",MR,0845 - 1025,OAK,Natural Science 101,Traditional,4,7,16
-Spring 2026 Semester,202630,34154,ENVR,1201,Lab for ENVR 1200,04,"Faul, Kristina",W,1145 - 1440,OAK,Natural Science 101,Traditional,1,4,12
-Spring 2026 Semester,202630,32789,ECON,1115,Principles of Macroeconomics,30,"Dave, Neha",WF,0845 - 1025,OAK,Graduate School of Business 117,Traditional,4,11,40
-Spring 2026 Semester,202630,33308,ECON,1115,Principles of Macroeconomics,31,"Dave, Neha",TF,1035 - 1215,OAK,Graduate School of Business 117,Traditional,4,32,40
-Spring 2026 Semester,202630,33309,ECON,1115,Principles of Macroeconomics,32,"Dave, Neha",TF,1225 - 1405,OAK,Graduate School of Business 117,Traditional,4,20,40
+Spring 2026 Semester,202630,33295,CAEP,1280,Introduction to Mindfulness,30,"Oda, Takeshi",TR,1500 - 1640,OAK,Graduate School of Business 109,Traditional,4,20,20
+Spring 2026 Semester,202630,38696,CRWT,1801,Writing Creatively in the Age of Artificial Intelligence,01,"Spahr, Juliana",TR,1500 - 1640,OAK,Education Department 106,Traditional,4,15,15
+Spring 2026 Semester,202630,39721,ENVR,1101,Environmental Science,03,"Faul, Kristina",WF,0845 - 1025,OAK,Natural Science 212,Traditional,4,10,28
+Spring 2026 Semester,202630,34148,ENVR,1200,Dynamic Earth,02,"Faul, Kristina",MR,0845 - 1025,OAK,Natural Science 212,Traditional,4,4,16
+Spring 2026 Semester,202630,34154,ENVR,1201,Lab for ENVR 1200,04,"Faul, Kristina",W,1145 - 1440,OAK,Natural Science 101,Traditional,1,3,12
+Spring 2026 Semester,202630,32789,ECON,1115,Principles of Macroeconomics,30,"Dave, Neha",WF,0845 - 1025,OAK,Graduate School of Business 117,Traditional,4,13,40
+Spring 2026 Semester,202630,33308,ECON,1115,Principles of Macroeconomics,31,"Dave, Neha",TF,1035 - 1215,OAK,Graduate School of Business 117,Traditional,4,33,40
+Spring 2026 Semester,202630,33309,ECON,1115,Principles of Macroeconomics,32,"Dave, Neha",TF,1225 - 1405,OAK,Graduate School of Business 117,Traditional,4,21,40
 Spring 2026 Semester,202630,33311,ECON,1116,Principles of Microeconomics,31,"LI, Seamus",TF,1225 - 1405,OAK,Natural Science 215,Traditional,4,8,40
-Spring 2026 Semester,202630,33312,ECON,1116,Principles of Microeconomics,32,"LI, Seamus",TF,1035 - 1215,OAK,Natural Science 215,Traditional,4,18,40
+Spring 2026 Semester,202630,33312,ECON,1116,Principles of Microeconomics,32,"LI, Seamus",TF,1035 - 1215,OAK,Natural Science 215,Traditional,4,20,40
 Spring 2026 Semester,202630,33654,ECON,1116,Principles of Microeconomics,33,"Reilly, Siobhan",WF,0845 - 1025,OAK,Graduate School of Business 118,Traditional,4,40,40
 Spring 2026 Semester,202630,37481,ECON,1116,Principles of Microeconomics,35,"Reilly, Siobhan",MR,0845 - 1025,OAK,Graduate School of Business 117,Traditional,4,40,40
-Spring 2026 Semester,202630,39800,ECON,2315,Macroeconomic Theory,13,"Sabetan, Farhad",TF,1035 - 1215,OAK,Aron Art Center A 120,Traditional,4,11,35
+Spring 2026 Semester,202630,39800,ECON,2315,Macroeconomic Theory,13,"Sabetan, Farhad",TF,1035 - 1215,OAK,Aron Art Center A 120,Traditional,4,12,35
 Spring 2026 Semester,202630,34054,ECON,2316,Microeconomic Theory,12,"LI, Seamus",MR,0845 - 1025,OAK,CPM 101,Traditional,4,14,35
 Spring 2026 Semester,202630,39554,EDUT,6303,Field Experience 2: Educational Leadership,01,"Bauer, Natalee",R,1530 - 1710,OAK,Mills Hall 318,Traditional,2,1,10
 Spring 2026 Semester,202630,39553,EDUT,6305,Human Resource Management in Education,01,"Galguera, Tomas",M,1715 - 2035,OAK,Education Department 106,Traditional,4,3,10
 Spring 2026 Semester,202630,39551,EDUT,6306,School Leadership,01,"Wright, Dana",T,1715 - 2035,OAK,Education Department 106,Traditional,4,2,10
 Spring 2026 Semester,202630,39552,EDUT,6307,Fiscal and Business Services,01,"Collins, Kevin",W,1715 - 2035,OAK,Education Department 106,Traditional,4,1,10
-Spring 2026 Semester,202630,40125,EECE,5698,ST: Tapeout a CMOS Chip,05,"Nagulu, Aravind",MW,1150 - 1330,OAK,Mills Hall 132,Traditional,4,7,10
-Spring 2026 Semester,202630,40312,EECE,7247,Radio Frequency Integrated Circuit Design,02,"Onabajo, Marvin",TF,0650 - 0830,OAK,Mills Hall 133,Live Cast,4,1,10
+Spring 2026 Semester,202630,40125,EECE,5698,ST: Tapeout a CMOS Chip,05,"Nagulu, Aravind",MW,1150 - 1330,OAK,Mills Hall 132,Traditional,4,10,10
+Spring 2026 Semester,202630,40312,EECE,7247,Radio Frequency Integrated Circuit Design,02,"Onabajo, Marvin",TF,0650 - 0830,OAK,Mills Hall 133,Live Cast,4,2,10
 Spring 2026 Semester,202630,40464,EECE,7353,VLSI Design,01,"Kim, Yong-Bin",TF,1225 - 1405,OAK,Lucie Stern 027,Live Cast,4,2,10
-Spring 2026 Semester,202630,36843,ENCP,6000,Career Management for Engineers,30,"Hatzievgenakis, Erica",M,1335 - 1515,OAK,Graduate School of Business 118,Traditional,1,2,34
 Spring 2026 Semester,202630,35705,ENGL,2460,Multiethnic Literatures of the U.S.,31,"Guidotti-Hernandez, Nicole",MW,1150 - 1330,OAK,Graduate School of Business 110,Traditional,4,1,19
 Spring 2026 Semester,202630,33310,ENGW,1102,First-Year Writing for Multilingual Writers,30,"Handler, Hayes",TF,1035 - 1215,OAK,Lucie Stern 006,Traditional,4,3,15
-Spring 2026 Semester,202630,32807,ENGW,1111,First-Year Writing,301,"Handler, Hayes",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Lucie Stern 006; Lucie Stern 006,Traditional,4,13,17
-Spring 2026 Semester,202630,32808,ENGW,1111,First-Year Writing,302,"Strychacz, Thomas",MWR,1035 - 1140,OAK,Graduate School of Business 124,Traditional,4,18,19
+Spring 2026 Semester,202630,32807,ENGW,1111,First-Year Writing,301,"Powell, Patricia",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Lucie Stern 006; Lucie Stern 006,Traditional,4,13,17
+Spring 2026 Semester,202630,32808,ENGW,1111,First-Year Writing,302,"Strychacz, Thomas",MWR,1035 - 1140,OAK,Graduate School of Business 124,Traditional,4,19,19
 Spring 2026 Semester,202630,32793,ENGW,1111,First-Year Writing,303,"Ito, Susan",TR,1500 - 1640,OAK,Graduate School of Business 110,Traditional,4,19,19
 Spring 2026 Semester,202630,33313,ENGW,1111,First-Year Writing,304,"Strychacz, Thomas",MWR,1335 - 1440,OAK,Graduate School of Business 110,Traditional,4,19,19
-Spring 2026 Semester,202630,33314,ENGW,1111,First-Year Writing,305,"Hanley Cardozo, Kristen",MWR,1035 - 1140,OAK,Graduate School of Business 110,Traditional,4,19,19
+Spring 2026 Semester,202630,33314,ENGW,1111,First-Year Writing,305,"Crain, Abigail",MWR,1035 - 1140,OAK,Graduate School of Business 110,Traditional,4,19,19
 Spring 2026 Semester,202630,33315,ENGW,1111,First-Year Writing,306,"Saxton, Kirsten",MW,1150 - 1330,OAK,Mills Hall 135,Traditional,4,19,19
-Spring 2026 Semester,202630,32156,ENGW,1111,First-Year Writing,308,"Reiss, Kathryn",TF,1035 - 1215,OAK,Graduate School of Business 110,Traditional,4,6,19
+Spring 2026 Semester,202630,32156,ENGW,1111,First-Year Writing,308,"Reiss, Kathryn",TF,1035 - 1215,OAK,Graduate School of Business 110,Traditional,4,5,19
 Spring 2026 Semester,202630,32157,ENGW,1111,First-Year Writing,309,"Abinader, Elmaz",TF,1225 - 1405,OAK,Graduate School of Business 110,Traditional,4,18,19
-Spring 2026 Semester,202630,32824,ENGW,1111,First-Year Writing,310,"Powell, Patricia",TR,1650 - 1830,OAK,Graduate School of Business 110,Traditional,4,8,19
-Spring 2026 Semester,202630,33458,ENGW,1111,First-Year Writing,311,"Young, Stephanie",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 124; Graduate School of Business 124,Traditional,4,14,19
+Spring 2026 Semester,202630,32824,ENGW,1111,First-Year Writing,310,"Powell, Patricia",TR,1650 - 1830,OAK,Graduate School of Business 110,Traditional,4,11,19
+Spring 2026 Semester,202630,33458,ENGW,1111,First-Year Writing,311,"Young, Stephanie",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 124; Graduate School of Business 124,Traditional,4,15,19
 Spring 2026 Semester,202630,32806,ENGW,1111,First-Year Writing,312,"Abinader, Elmaz",TF,1035 - 1215,OAK,Graduate School of Business 124,Traditional,4,13,19
-Spring 2026 Semester,202630,33866,ENGW,1111,First-Year Writing,314,"Crain, Abigail",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 110; Graduate School of Business 110,Traditional,4,12,19
-Spring 2026 Semester,202630,33266,ENTR,2303,Marketing Strategies for Startups,03,"Singh, Ravinder",F,0845 - 1200,OAK,Graduate School of Business 241,Traditional,4,14,16
+Spring 2026 Semester,202630,33866,ENGW,1111,First-Year Writing,314,"Reiss, Kathryn",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 110; Graduate School of Business 110,Traditional,4,12,19
+Spring 2026 Semester,202630,33266,ENTR,2303,Marketing Strategies for Startups,03,"Singh, Ravinder",F,0845 - 1200,OAK,Graduate School of Business 241,Traditional,4,15,16
 Spring 2026 Semester,202630,39163,ENTR,3945,New Venture Development: Startup Immersion,01,"Zafar, Naeem",W,1225 - 1320,OAK,Lucie Stern 010,Traditional,4,21,20
-Spring 2026 Semester,202630,33316,FINA,2201,Financial Management,30,"Thomas, Oommen",TF,1225 - 1405,OAK,Natural Science 213,Traditional,4,40,40
+Spring 2026 Semester,202630,33316,FINA,2201,Financial Management,30,"Thomas, Oommen",TF,1225 - 1405,OAK,Natural Science 213,Traditional,4,39,40
 Spring 2026 Semester,202630,34136,FINA,2201,Financial Management,31,"Thomas, Oommen",WF,0845 - 1025,OAK,Graduate School of Business 109,Traditional,4,24,34
 Spring 2026 Semester,202630,34135,FINA,2201,Financial Management,32,"Thomas, Oommen",TR,1500 - 1640,OAK,Natural Science 217,Traditional,4,40,40
 Spring 2026 Semester,202630,32678,FINA,3303,Investments,09,"Zafar, Naeem",W,0845 - 1200,OAK,Lucie Stern 010,Traditional,4,21,24
 Spring 2026 Semester,202630,31574,FINA,4610,Entrepreneurial Finance and Private Equity,03,"Ruparel, Jay; Hoodbhoy, Faraz",W,1335 - 1650,OAK,Graduate School of Business 125,Traditional,4,14,24
 Spring 2026 Semester,202630,39536,GSND,6320,Psychology of Play,30,"Mathe, Nathalie",WF,1035 - 1215,OAK,Lucie Stern 026,Traditional,4,5,12
-Spring 2026 Semester,202630,39537,GSND,6460,Generative Game Design,30,"Wren, William",R,1035 - 1435,XCR,Unidentified campus ROOM,Traditional,4,4,12
+Spring 2026 Semester,202630,39537,GSND,6460,Generative Game Design,30,"Wren, William",R,1035 - 1435,OAK,Lucie Stern 006,Traditional,4,4,12
 Spring 2026 Semester,202630,39538,GSND,6520,3D Modeling and Asset Creation Principles,30,"Phan, Van",W,1335 - 1705,XCR,Unidentified campus ROOM,Traditional,4,4,12
-Spring 2026 Semester,202630,39539,GSND,7980,Capstone,30,"Mathe, Nathalie",W,1335 - 1705,XCR,Unidentified campus ROOM,Traditional,4,3,20
+Spring 2026 Semester,202630,39539,GSND,7980,Capstone,30,"Mathe, Nathalie",W,1335 - 1705,OAK,Lucie Stern 010,Traditional,4,3,20
 Spring 2026 Semester,202630,33317,GE,1502,Cornerstone of Engineering 2,300,"Keyvani Someh, Leila",TF,1225 - 1405,OAK,Aron Art Center C Ceramics 183,Traditional,4,40,40
-Spring 2026 Semester,202630,33863,GE,1502,Cornerstone of Engineering 2,301,"Keyvani Someh, Leila",TF,1035 - 1215,OAK,Aron Art Center C Ceramics 183,Traditional,4,35,40
+Spring 2026 Semester,202630,33863,GE,1502,Cornerstone of Engineering 2,301,"Keyvani Someh, Leila",TF,1035 - 1215,OAK,Aron Art Center C Ceramics 183,Traditional,4,34,40
 Spring 2026 Semester,202630,38965,HLTH,1203,Basic Clinical Skills for the Healthcare Professional,30,"Spangler, Natalie; Corey, Domenic",F; T,1035 - 1215; 1035 - 1215,OAK; OAK,CPM 106; CPM 102,Traditional,3,14,20
 Spring 2026 Semester,202630,33318,HSCI,1105,Human Nutrition,30,"Liu, Jing",MWF,1730 - 1835,OAK,Vera Long 140,Traditional,4,5,22
-Spring 2026 Semester,202630,33641,HIST,2211,The World Since 1945,31,"Brown, Timothy",MR,0845 - 1025,OAK,Vera Long 140,Traditional,4,11,24
+Spring 2026 Semester,202630,33641,HIST,2211,The World Since 1945,31,"Brown, Timothy",MR,0845 - 1025,OAK,Vera Long 140,Traditional,4,13,24
 Spring 2026 Semester,202630,37170,INFO,5002,Introduction to Python for Information Systems,30,"Mosaddegh, Abdolreza",F,1035 - 1355,OAK,Graduate School of Business 109,Traditional,4,0,30
 Spring 2026 Semester,202630,37183,INFO,5100,Application Engineering and Development,30,"Aityan, Sergey",T,1500 - 1820,OAK,Graduate School of Business 117,Traditional,4,2,35
 Spring 2026 Semester,202630,37194,INFO,5101,Lab for INFO 5100,30,"Aityan, Sergey",TBA,TBA,TBA,TBA,Traditional,TBA,2,35
-Spring 2026 Semester,202630,37208,INFO,6105,Data Science Engineering Methods and Tools,30,"Mosaddegh, Abdolreza",W,1035 - 1355,OAK,Mills Hall 133,Traditional,4,3,32
-Spring 2026 Semester,202630,37220,INFO,6150,Web Design and User Experience Engineering,30,"Lopez Plascencia, Fernando Augusto",F,1630 - 1950,OAK,Graduate School of Business 109,Traditional,4,6,30
-Spring 2026 Semester,202630,37243,INFO,6215,Business Analysis and Information Engineering,30,"Alonardo, Karen",R,1035 - 1355,OAK,Mills Hall 133,Traditional,4,3,30
-Spring 2026 Semester,202630,37281,INFO,7374,ST: Adv Techniques With LLM,30,"Mosaddegh, Abdolreza",M,1335 - 1655,OAK,Graduate School of Business 125,Traditional,1-4,4,30
+Spring 2026 Semester,202630,37208,INFO,6105,Data Science Engineering Methods and Tools,30,"Mosaddegh, Abdolreza",W,1035 - 1355,OAK,Mills Hall 133,Traditional,4,4,32
+Spring 2026 Semester,202630,37220,INFO,6150,Web Design and User Experience Engineering,30,"Lopez Plascencia, Fernando Augusto",F,1630 - 1950,OAK,Graduate School of Business 109,Traditional,4,8,30
+Spring 2026 Semester,202630,37243,INFO,6215,Business Analysis and Information Engineering,30,"Alonardo, Karen",R,1035 - 1355,OAK,Mills Hall 133,Traditional,4,4,30
+Spring 2026 Semester,202630,37281,INFO,7374,ST: Adv Techniques With LLM,30,"Mosaddegh, Abdolreza",M,1335 - 1655,OAK,Graduate School of Business 125,Traditional,1-4,6,30
 Spring 2026 Semester,202630,37289,INFO,7375,ST: Neural Networks &amp; AI,30,"Aityan, Sergey",R,1500 - 1820,OAK,Mills Hall 133,Traditional,1-4,3,30
-Spring 2026 Semester,202630,39540,INAM,2973,Intro to Wheel Throwing,30,TBA,M; M; M; M,1500 - 1800; 1500 - 1800; 1500 - 1800; 1500 - 1800,OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,5,8
+Spring 2026 Semester,202630,39540,INAM,2973,Intro to Wheel Throwing,30,"Tang, Tiffany",M; M; M; M,1500 - 1800; 1500 - 1800; 1500 - 1800; 1500 - 1800,OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,5,8
 Spring 2026 Semester,202630,40481,INAM,2973,Int. Product Design Software,31,TBA,M; M; M; M,0900 - 1200; 0900 - 1200; 0900 - 1200; 0900 - 1200,OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,2,12
 Spring 2026 Semester,202630,40482,INAM,2973,Intro to Ceramics HandBuilding,32,TBA,R; R; R; R; R; R,1330 - 1530; 1330 - 1530; 1330 - 1530; 1330 - 1530; 1330 - 1530; 1330 - 1530,OAK; OAK; OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,3,8
-Spring 2026 Semester,202630,40449,INAM,2973,CNC Furniture,34,TBA,R; R; R; R,1150 - 1440; 1150 - 1440; 1150 - 1440; 1150 - 1440,OAK; OAK; OAK; OAK,Graduate School of Business 241; Graduate School of Business 241; Graduate School of Business 241; Graduate School of Business 241,Traditional,1-4,6,10
-Spring 2026 Semester,202630,40448,INAM,2973,Intro to Wheel Throwing,35,TBA,M; M; M; M,1500 - 1800; 1500 - 1800; 1500 - 1800; 1500 - 1800,OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,7,8
+Spring 2026 Semester,202630,40449,INAM,2973,CNC Furniture,34,TBA,R; R; R; R,1150 - 1440; 1150 - 1440; 1150 - 1440; 1150 - 1440,OAK; OAK; OAK; OAK,Graduate School of Business 241; Graduate School of Business 241; Graduate School of Business 241; Graduate School of Business 241,Traditional,1-4,5,10
+Spring 2026 Semester,202630,40448,INAM,2973,Intro to Wheel Throwing,35,"Tang, Tiffany",M; M; M; M,1500 - 1800; 1500 - 1800; 1500 - 1800; 1500 - 1800,OAK; OAK; OAK; OAK,Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179; Aron Art Center C Ceramics 179,Traditional,1-4,7,8
 Spring 2026 Semester,202630,34044,INMI,1051,Introduction to Ethnic Studies,01,"Bauer, Natalee",TF,1035 - 1215,OAK,Mills Hall 135,Traditional,4,5,20
-Spring 2026 Semester,202630,38700,INMI,1100,Problem Solving for a Sustainable Future,01,"Adams, Ashley",MWR,1035 - 1140,OAK,Mills Hall 135,Traditional,4,11,20
-Spring 2026 Semester,202630,38702,INMI,2510,"China, Globalization, and the Environment",01,"Henderson, Mark",TF,1035 - 1215,OAK,Graduate School of Business 125,Traditional,4,3,25
+Spring 2026 Semester,202630,38700,INMI,1100,Problem Solving for a Sustainable Future,01,"Adams, Ashley",MWR,1035 - 1140,OAK,Graduate School of Business 125,Traditional,4,14,20
+Spring 2026 Semester,202630,38702,INMI,2510,"China, Globalization, and the Environment",01,"Henderson, Mark",TF,1035 - 1215,OAK,Graduate School of Business 125,Traditional,4,5,25
 Spring 2026 Semester,202630,39548,INMI,2820,"Climate Change, Health, and Resilience",01,"Bachen, Elizabeth",MWR,1335 - 1440,OAK,Mills Hall 135,Traditional,4,5,20
-Spring 2026 Semester,202630,38123,INSH,6300,Research Methods in the Social Sciences,02,"Wright, Dana",R,1715 - 2035,OAK,Lucie Stern 035,Traditional,4,5,25
+Spring 2026 Semester,202630,38123,INSH,6300,Research Methods in the Social Sciences,02,"Wright, Dana",R,1715 - 2035,OAK,Lucie Stern 035,Traditional,4,6,25
 Spring 2026 Semester,202630,38126,INSH,6500,Statistical Analysis,02,"Evans, Samuel",T,1715 - 2035,OAK,Lucie Stern 035,Traditional,4,6,25
-Spring 2026 Semester,202630,33329,INTB,1203,International Business and Global Social Responsibility,31,"Drori, Netanel",TR,1500 - 1640,OAK,CPM 100,Traditional,4,10,40
+Spring 2026 Semester,202630,33329,INTB,1203,International Business and Global Social Responsibility,31,"Drori, Netanel",TR,1500 - 1640,OAK,Lucie Stern 035,Traditional,4,11,28
 Spring 2026 Semester,202630,33330,INTB,1203,International Business and Global Social Responsibility,32,"Kaltenecker Retto de Queiroz, Evodio",MWF,1500 - 1605,OAK,Natural Science 215,Traditional,4,39,40
-Spring 2026 Semester,202630,33331,INTB,1203,International Business and Global Social Responsibility,33,"Kaltenecker Retto de Queiroz, Evodio",MWF,1615 - 1720,OAK,Natural Science 215,Traditional,4,0,40
+Spring 2026 Semester,202630,33331,INTB,1203,International Business and Global Social Responsibility,33,"Kaltenecker Retto de Queiroz, Evodio",MWF,1615 - 1720,OAK,Natural Science 215,Traditional,4,0,0
 Spring 2026 Semester,202630,39549,INTB,3330,Digital Globalization,01,"Kaltenecker Retto de Queiroz, Evodio",MWR,1035 - 1140,OAK,Natural Science 212,Traditional,4,7,30
-Spring 2026 Semester,202630,39070,JRNL,1150,Understanding Today&amp;#8217;s News,03,"Dailey, Keli",TR,1500 - 1640,OAK,Mills Hall 135,Traditional,4,10,19
+Spring 2026 Semester,202630,39070,JRNL,1150,Understanding Today&amp;#8217;s News,03,"Dailey, Keli",TR,1500 - 1640,OAK,Mills Hall 135,Traditional,4,8,19
 Spring 2026 Semester,202630,35117,LPSC,7311,Strategizing Public Policy,03,"Parker, Adam",W,1715 - 2035,OAK,Graduate School of Business 124,Traditional,4,7,20
-Spring 2026 Semester,202630,34114,MISM,2301,Introduction to Information Systems and Digital Technologies,16,"Ruparel, Jay",MW,1150 - 1330,OAK,Graduate School of Business 118,Traditional,4,41,42
-Spring 2026 Semester,202630,40988,MISM,6412,Data Mining and Machine Learning for Business,01,"Theokary, Carol",TF,1035 - 1215,OAK,Lucie Stern 014,Traditional,4,0,25
-Spring 2026 Semester,202630,40499,MISM,6413,Designing Information Products for Transforming Business,01,"Ruparel, Jay",TR,1500 - 1640,OAK,Natural Science 212,Traditional,4,0,25
-Spring 2026 Semester,202630,34138,MGSC,2301,Business Statistics,30,"Theokary, Carol",TF,1225 - 1405,OAK,Graduate School of Business 118,Traditional,4,39,43
+Spring 2026 Semester,202630,34114,MISM,2301,Introduction to Information Systems and Digital Technologies,16,"Ruparel, Jay",MW,1150 - 1330,OAK,Graduate School of Business 118,Traditional,4,42,42
+Spring 2026 Semester,202630,40988,MISM,6412,Data Mining and Machine Learning for Business,01,"Theokary, Carol",TF,1035 - 1215,OAK,Graduate School of Business 241,Traditional,4,6,25
+Spring 2026 Semester,202630,40499,MISM,6413,Designing Information Products for Transforming Business,01,"Ruparel, Jay",T,1500 - 1830,OAK,Graduate School of Business 241,Traditional,4,6,15
+Spring 2026 Semester,202630,34138,MGSC,2301,Business Statistics,30,"Theokary, Carol",TF,1225 - 1405,OAK,Graduate School of Business 118,Traditional,4,41,43
 Spring 2026 Semester,202630,33333,MGSC,2301,Business Statistics,31,"Kalluri, Ravikiran",TF,1035 - 1215,OAK,Graduate School of Business 118,Traditional,4,30,43
 Spring 2026 Semester,202630,32791,MKTG,2201,Introduction to Marketing,30,"Cooney, Magdalena",TR,1500 - 1640,OAK,Graduate School of Business 118,Traditional,4,40,40
 Spring 2026 Semester,202630,33323,MKTG,2201,Introduction to Marketing,31,"Cooney, Magdalena",TF,1225 - 1405,OAK,Lucie Stern 010,Traditional,4,20,20
 Spring 2026 Semester,202630,40919,MKTG,2201,Introduction to Marketing,32,"Leach, Leslie",TF,1225 - 1405,OAK,Lucie Stern 014,Traditional,4,20,20
-Spring 2026 Semester,202630,39594,MKTG,3945,Experiential B2B Marketing and Innovation: Industry Challenge in the Context of a Global Enterprise,01,"Karniouchina, Ekaterina; Ringham, Ursula",TR,1500 - 1640,OAK,Graduate School of Business 109,Traditional,4,11,25
-Spring 2026 Semester,202630,34076,MATH,1215,Mathematical Thinking,06,"Nguyen, Vy Thi Khanh",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,CPM 102; CPM 102,Traditional,4,11,25
+Spring 2026 Semester,202630,39594,MKTG,3945,Experiential B2B Marketing and Innovation: Industry Challenge in the Context of a Global Enterprise,01,"Karniouchina, Ekaterina; Ringham, Ursula",TR,1500 - 1640,OAK,Graduate School of Business 109,Traditional,4,12,25
+Spring 2026 Semester,202630,41043,MKTG,6434,Marketing Analytics,01,"Ramnarayan, Sujata",R,1500 - 1830,OAK,Graduate School of Business 241,Traditional,4,6,15
+Spring 2026 Semester,202630,34076,MATH,1215,Mathematical Thinking,06,"Nguyen, Vy Thi Khanh",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,CPM 102; CPM 102,Traditional,4,10,25
 Spring 2026 Semester,202630,33327,MATH,1231,Calculus for Business and Economics,32,"Sparks, Roger",TR,1500 - 1640,OAK,Natural Science 213,Traditional,4,39,50
 Spring 2026 Semester,202630,33457,MATH,1231,Calculus for Business and Economics,33,"Sparks, Roger",TR,1650 - 1830,OAK,Natural Science 213,Traditional,4,18,40
 Spring 2026 Semester,202630,38710,MATH,1341,Calculus 1 for Science and Engineering,20,"Nguyen, Vy Thi Khanh",TR,1500 - 1640,OAK,CPM 101,Traditional,4,36,39
-Spring 2026 Semester,202630,38711,MATH,1341,Calculus 1 for Science and Engineering,21,"Nguyen, Vy Thi Khanh",TR,1650 - 1830,OAK,CPM 101,Traditional,4,15,39
-Spring 2026 Semester,202630,32766,MATH,1342,Calculus 2 for Science and Engineering,30,"Goyal, Rangoli",TF,1035 - 1215,OAK,Natural Science 217,Traditional,4,29,40
-Spring 2026 Semester,202630,34551,MATH,1342,Calculus 2 for Science and Engineering,31,"Goyal, Rangoli",TF,1225 - 1405,OAK,Natural Science 217,Traditional,4,35,40
-Spring 2026 Semester,202630,33324,MATH,1365,Introduction to Mathematical Reasoning,30,"Averett, Maia",MWF,1500 - 1605,OAK,Natural Science 212,Traditional,4,16,35
-Spring 2026 Semester,202630,33385,MATH,2321,Calculus 3 for Science and Engineering,30,"Averett, Maia",MWR,1035 - 1140,OAK,CPM 101,Traditional,4,35,35
-Spring 2026 Semester,202630,40815,MATH,2321,Calculus 3 for Science and Engineering,31,"Averett, Maia",MWF,1615 - 1720,OAK,Graduate School of Business 241,Traditional,4,15,15
+Spring 2026 Semester,202630,38711,MATH,1341,Calculus 1 for Science and Engineering,21,"Nguyen, Vy Thi Khanh",TR,1650 - 1830,OAK,CPM 101,Traditional,4,18,39
+Spring 2026 Semester,202630,32766,MATH,1342,Calculus 2 for Science and Engineering,30,"Goyal, Rangoli",TF,1035 - 1215,OAK,Natural Science 217,Traditional,4,27,40
+Spring 2026 Semester,202630,34551,MATH,1342,Calculus 2 for Science and Engineering,31,"Goyal, Rangoli",TF,1225 - 1405,OAK,Natural Science 217,Traditional,4,37,40
+Spring 2026 Semester,202630,33324,MATH,1365,Introduction to Mathematical Reasoning,30,"Averett, Maia",MWF,1500 - 1605,OAK,Natural Science 212,Traditional,4,17,35
+Spring 2026 Semester,202630,33385,MATH,2321,Calculus 3 for Science and Engineering,30,"Averett, Maia",MWR,1035 - 1140,OAK,CPM 101,Traditional,4,36,39
+Spring 2026 Semester,202630,40815,MATH,2321,Calculus 3 for Science and Engineering,31,"Averett, Maia",MWF,1615 - 1720,OAK,Natural Science 212,Traditional,4,15,16
 Spring 2026 Semester,202630,34080,MATH,2341,Differential Equations and Linear Algebra for Engineering,12,"Pluta, Robert",TF,1035 - 1215,OAK,CPM 100,Traditional,4,35,35
-Spring 2026 Semester,202630,40816,MATH,2341,Differential Equations and Linear Algebra for Engineering,13,"Pluta, Robert",TF,1225 - 1405,OAK,Graduate School of Business 241,Traditional,4,13,15
-Spring 2026 Semester,202630,38723,MATH,7340,Statistics for Bioinformatics,05,"Bowser, Bradley",W,1800 - 2120,OAK,Graduate School of Business 110,Traditional,4,0,10
-Spring 2026 Semester,202630,33702,MSCR,1320,Media and Social Change,30,"Dailey, Keli",TR,1650 - 1830,OAK,Lucie Stern 014,Traditional,4,6,25
-Spring 2026 Semester,202630,34190,MUST,1220,Introduction to Music Technology,32,"Fei, James",TR,1650 - 1830,OAK,Lucie Stern 027,Traditional,4,4,15
-Spring 2026 Semester,202630,33580,PHIL,1101,Introduction to Philosophy,03,"Gupta, Jay",TF,1035 - 1215,OAK,Natural Science 213,Traditional,4,12,40
-Spring 2026 Semester,202630,34060,PHIL,1115,Introduction to Logic,03,"Colomina-Alminana, Juan",MWR,1035 - 1140,OAK,Natural Science 213,Traditional,4,16,40
-Spring 2026 Semester,202630,33586,PHIL,1145,Technology and Human Values,11,"Gupta, Jay",MW,1150 - 1330,OAK,CPM 100,Traditional,4,24,40
-Spring 2026 Semester,202630,34061,PHIL,1180,Environmental Ethics,02,"Colomina-Alminana, Juan",MWR,1335 - 1440,OAK,Natural Science 213,Traditional,4,10,40
+Spring 2026 Semester,202630,40816,MATH,2341,Differential Equations and Linear Algebra for Engineering,13,"Pluta, Robert",TF,1225 - 1405,OAK,Graduate School of Business 241,Traditional,4,15,15
+Spring 2026 Semester,202630,33702,MSCR,1320,Media and Social Change,30,"Dailey, Keli",TR,1650 - 1830,OAK,Lucie Stern 014,Traditional,4,8,25
+Spring 2026 Semester,202630,34190,MUST,1220,Introduction to Music Technology,32,"Fei, James",TR,1650 - 1830,OAK,Music Building 123,Traditional,4,5,15
+Spring 2026 Semester,202630,33580,PHIL,1101,Introduction to Philosophy,03,"Gupta, Jay",TF,1035 - 1215,OAK,Natural Science 213,Traditional,4,17,40
+Spring 2026 Semester,202630,34060,PHIL,1115,Introduction to Logic,03,"Colomina-Alminana, Juan",MWR,1035 - 1140,OAK,Natural Science 213,Traditional,4,21,40
+Spring 2026 Semester,202630,33586,PHIL,1145,Technology and Human Values,11,"Gupta, Jay",MW,1150 - 1330,OAK,Natural Science 217,Traditional,4,26,40
+Spring 2026 Semester,202630,34061,PHIL,1180,Environmental Ethics,02,"Colomina-Alminana, Juan",MWR,1335 - 1440,OAK,Natural Science 213,Traditional,4,9,40
 Spring 2026 Semester,202630,33596,PHIL,2303,Social and Political Philosophy,02,"Stubbs, Alec",MW,1150 - 1330,OAK,CPM 101,Traditional,4,35,35
-Spring 2026 Semester,202630,37565,PHIL,3343,Existentialism,01,"Stubbs, Alec",TR,1500 - 1640,OAK,Lucie Stern 014,Traditional,4,26,30
-Spring 2026 Semester,202630,32767,PHYS,1151,Physics for Engineering 1,30,"Alvis, Rosa",MW,1150 - 1330,OAK,Natural Science 213,Traditional,3,51,50
-Spring 2026 Semester,202630,32768,PHYS,1152,Lab for PHYS 1151,300,"Alvis, Rosa",F,0730 - 1020,OAK,Natural Science 105,Traditional,1,25,25
+Spring 2026 Semester,202630,37565,PHIL,3343,Existentialism,01,"Stubbs, Alec",TR,1500 - 1640,OAK,Lucie Stern 014,Traditional,4,29,30
+Spring 2026 Semester,202630,32767,PHYS,1151,Physics for Engineering 1,30,"Alvis, Rosa",MW,1150 - 1330,OAK,Natural Science 213,Traditional,3,49,50
+Spring 2026 Semester,202630,32768,PHYS,1152,Lab for PHYS 1151,300,"Alvis, Rosa",F,0730 - 1020,OAK,Natural Science 105,Traditional,1,23,25
 Spring 2026 Semester,202630,34507,PHYS,1152,Lab for PHYS 1151,301,"Alvis, Rosa",W,1500 - 1750,OAK,Natural Science 105,Traditional,1,26,25
-Spring 2026 Semester,202630,32769,PHYS,1153,Interactive Learning Seminar for PHYS 1151,30,"Alvis, Rosa",M,0800 - 1020,OAK,Natural Science 213,Traditional,1,51,50
+Spring 2026 Semester,202630,32769,PHYS,1153,Interactive Learning Seminar for PHYS 1151,30,"Alvis, Rosa",M,0800 - 1020,OAK,Natural Science 213,Traditional,1,49,50
 Spring 2026 Semester,202630,32770,PHYS,1155,Physics for Engineering 2,30,"Alvis, Rosa",MWR,1335 - 1440,OAK,Natural Science 212,Traditional,3,16,20
 Spring 2026 Semester,202630,32771,PHYS,1156,Lab for PHYS 1155,30,"Alvis, Rosa",W,0730 - 1020,OAK,Natural Science 105,Traditional,1,16,20
 Spring 2026 Semester,202630,32772,PHYS,1157,Interactive Learning Seminar for PHYS 1155,30,"Alvis, Rosa",M,1500 - 1720,OAK,Natural Science 217,Traditional,1,16,20
 Spring 2026 Semester,202630,32796,POLS,1160,International Relations,30,"Rudolph, Matthew",TR,1650 - 1830,OAK,Graduate School of Business 109,Traditional,4,30,30
-Spring 2026 Semester,202630,32797,POLS,2358,Current Issues in Cities and Suburbs,30,"Lahr, Darcelle",MWR,1035 - 1140,OAK,Graduate School of Business 125,Traditional,4,16,30
 Spring 2026 Semester,202630,33320,PSYC,1101,Foundations of Psychology,31,"Bachen, Elizabeth",TF,1225 - 1405,OAK,Graduate School of Business 125,Traditional,4,6,25
-Spring 2026 Semester,202630,34121,PSYC,1101,Foundations of Psychology,32,"Tang, Xiangyun",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 117; Graduate School of Business 117,Traditional,4,13,35
+Spring 2026 Semester,202630,34121,PSYC,1101,Foundations of Psychology,32,"Tang, Xiangyun",R; T,1150 - 1330; 0845 - 1025,OAK; OAK,Graduate School of Business 117; Graduate School of Business 117,Traditional,4,18,35
 Spring 2026 Semester,202630,34125,PSYC,1101,Foundations of Psychology,34,"Scott, Terri",TR,1500 - 1640,OAK,Graduate School of Business 124,Traditional,4,14,20
-Spring 2026 Semester,202630,34790,PSYC,3400,Personality,02,"Morier, Dean",TF,1225 - 1405,OAK,Education Department 101,Traditional,4,23,25
+Spring 2026 Semester,202630,34790,PSYC,3400,Personality,02,"Morier, Dean",TF,1225 - 1405,OAK,Education Department 101,Traditional,4,24,25
 Spring 2026 Semester,202630,34122,PSYC,3404,Developmental Psychology,07,"Tang, Xiangyun",TR,1500 - 1640,OAK,Education Department 101,Traditional,4,25,25
-Spring 2026 Semester,202630,34129,PSYC,3406,Clinical Psychology and Mental Health,05,"Bachen, Elizabeth",MW,1150 - 1330,OAK,Graduate School of Business 109,Traditional,4,22,25
+Spring 2026 Semester,202630,34129,PSYC,3406,Clinical Psychology and Mental Health,05,"Bachen, Elizabeth",MW,1150 - 1330,OAK,Graduate School of Business 109,Traditional,4,23,25
 Spring 2026 Semester,202630,34126,PSYC,3458,Biological Psychology,05,"Scott, Terri",MWR,1335 - 1440,OAK,Graduate School of Business 109,Traditional,4,34,34
-Spring 2026 Semester,202630,34792,PSYC,3464,Psychology of Language,03,"Scott, Terri",MWR,1035 - 1140,OAK,Graduate School of Business 109,Traditional,4,19,25
+Spring 2026 Semester,202630,34792,PSYC,3464,Psychology of Language,03,"Scott, Terri",MWR,1035 - 1140,OAK,Graduate School of Business 109,Traditional,4,21,25
 Spring 2026 Semester,202630,35142,PPUA,6507,Institutional Leadership and the Public Manager,02,"Cornu Toney, Sharon",M,1730 - 2050,OAK,Lucie Stern 035,Traditional,4,4,25
 Spring 2026 Semester,202630,35760,PPUA,7673,Capstone in Public Policy and Urban Affairs,05,"Parker, Adam",M,1715 - 2035,OAK,Graduate School of Business 124,Traditional,4,7,20
 Spring 2026 Semester,202630,33348,PHTH,2350,Community and Public Health,31,"Jaime, Maria Catrina",MR,0845 - 1025,OAK,Natural Science 212,Traditional,4,22,22
 Spring 2026 Semester,202630,34533,PHTH,2350,Community and Public Health,32,"Jaime, Maria Catrina",MW,1150 - 1330,OAK,Natural Science 212,Traditional,4,22,22
-Spring 2026 Semester,202630,40044,SOCL,1246,Environment and Society,03,"Brown, Timothy",MW,1150 - 1330,OAK,Graduate School of Business 124,Traditional,4,10,19
-Spring 2026 Semester,202630,34137,SCHM,2301,Supply Chain and Operations Management,13,"Xu, Xun",MW,1150 - 1330,OAK,Natural Science 215,Traditional,4,37,40
-Winter 2026 CPS Quarter,202625,20998,ALY,6000,Introduction to Analytics,35,"Chen, Judy",W,1800 - 2040,TBA,TBA,Hybrid,3,1,30
-Winter 2026 CPS Quarter,202625,20999,ALY,6010,Probability Theory and Introductory Statistics,35,"Tellner, Thomas",W,1800 - 2040,TBA,TBA,Hybrid,3,1,30
-Winter 2026 CPS Quarter,202625,21006,ALY,6015,Intermediate Analytics,28,"Tellner, Thomas",M,1730 - 2010,TBA,TBA,Hybrid,3,2,30
-Winter 2026 CPS Quarter,202625,21007,ALY,6050,Introduction to Enterprise Analytics,25,"Jones, Adam",M,1730 - 2010,TBA,TBA,Hybrid,3,2,30
-Winter 2026 CPS Quarter,202625,21002,ALY,6070,Communication and Visualization for Data Analytics,27,"Wang, Zheng",R,1730 - 2010,TBA,TBA,Hybrid,3,2,30
-Winter 2026 CPS Quarter,202625,21793,ALY,6130,Risk Management for Analytics,16,TBA,R,1750 - 2030,TBA,TBA,Hybrid,3,5,30
-Winter 2026 CPS Quarter,202625,21765,ALY,6980,Capstone,29,TBA,F,1800 - 2040,TBA,TBA,Hybrid,3,5,30
-Winter 2026 CPS Quarter,202625,21734,EXED,5945,Experiential Integration Seminar,17,TBA,M,1800 - 1900,TBA,TBA,Traditional,TBA,0,10
-Winter 2026 CPS Quarter,202625,21692,EAI,6020,AI System Technologies,14,"Jones, Adam",T,1730 - 2010,TBA,TBA,Hybrid,3,3,30
+Spring 2026 Semester,202630,40044,SOCL,1246,Environment and Society,03,"Brown, Timothy",MW,1150 - 1330,OAK,Graduate School of Business 124,Traditional,4,12,19
+Spring 2026 Semester,202630,34137,SCHM,2301,Supply Chain and Operations Management,13,"Xu, Xun",MW,1150 - 1330,OAK,Natural Science 215,Traditional,4,39,40
+Winter 2026 CPS Quarter,202625,20998,ALY,6000,Introduction to Analytics,35,"Chen, Judy",W,1800 - 2040,OAK,Lucie Stern 006,Hybrid,3,1,17
+Winter 2026 CPS Quarter,202625,20999,ALY,6010,Probability Theory and Introductory Statistics,35,"Tellner, Thomas",W,1800 - 2040,OAK,Lucie Stern 006,Hybrid,3,1,17
+Winter 2026 CPS Quarter,202625,21006,ALY,6015,Intermediate Analytics,28,"Tellner, Thomas",M,1730 - 2010,OAK,Lucie Stern 006,Hybrid,3,2,17
+Winter 2026 CPS Quarter,202625,21007,ALY,6050,Introduction to Enterprise Analytics,25,"Jones, Adam",M,1730 - 2010,OAK,Lucie Stern 006,Hybrid,3,2,17
+Winter 2026 CPS Quarter,202625,21002,ALY,6070,Communication and Visualization for Data Analytics,27,"Wang, Zheng",R,1730 - 2010,OAK,Lucie Stern 006,Hybrid,3,2,17
+Winter 2026 CPS Quarter,202625,21793,ALY,6130,Risk Management for Analytics,16,"Tellner, Thomas",R,1750 - 2030,OAK,Lucie Stern 026,Hybrid,3,5,17
+Winter 2026 CPS Quarter,202625,21822,ALY,6130,Risk Management for Analytics,17,"Bergner, David",R,1800 - 2040,OAK,Mills Hall 132,Live Cast,3,1,5
+Winter 2026 CPS Quarter,202625,21765,ALY,6980,Capstone,29,"Russo, Carolyn",F,1800 - 2040,OAK,Lucie Stern 006,Hybrid,3,5,17
+Winter 2026 CPS Quarter,202625,21734,EXED,5945,Experiential Integration Seminar,17,TBA,M,1800 - 1900,OAK,Graduate School of Business 110,Traditional,TBA,0,10
+Winter 2026 CPS Quarter,202625,21692,EAI,6020,AI System Technologies,14,"Jones, Adam",T,1730 - 2010,OAK,Lucie Stern 006,Hybrid,3,4,17
