@@ -64,6 +64,11 @@ def get_subject_color(subject):
 def generate_calendar_html(csv_file, output_file='course_calendar.html'):
     """Generate interactive calendar view HTML"""
     
+    # Get file modification time
+    import os
+    file_mtime = os.path.getmtime(csv_file)
+    file_date = datetime.fromtimestamp(file_mtime).strftime('%B %d, %Y at %I:%M %p')
+    
     # Read CSV
     df = pd.read_csv(csv_file)
     
@@ -419,6 +424,9 @@ def generate_calendar_html(csv_file, output_file='course_calendar.html'):
                 <a href="{csv_file}" style="color: white; text-decoration: underline;" download>
                     📥 Download CSV Data
                 </a>
+            </p>
+            <p style="margin-top: 5px; font-size: 0.85em; opacity: 0.85;">
+                File created: {file_date}
             </p>
         </div>
         

@@ -2,6 +2,14 @@
 
 A Python-based toolset for scraping course schedules from Northeastern University's Banner system and generating interactive web visualizations.
 
+## TLDR
+
+`uv run bscraper-compare.py`
+`uv run calendar-view.py`
+`gaa`
+`gcmsg 'schedule update'`
+`gp`
+
 ## Overview
 
 This project consists of two main scripts:
